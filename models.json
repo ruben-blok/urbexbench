@@ -1,0 +1,9 @@
+[
+  "qwen/qwen3-vl-30b-a3b-thinking",
+  "google/gemma-3-4b-it",
+  "google/gemma-3-27b-it",
+  "mistralai/ministral-3b-2512",
+  "qwen/qwen3.5-9b",
+  "qwen/qwen3-vl-8b-instruct",
+  "qwen/qwen3.5-flash-02-23"
+]
