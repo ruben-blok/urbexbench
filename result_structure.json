@@ -1,0 +1,9 @@
+{
+    "model_results": [
+        {
+            "model": "model id",
+            "predictions": {
+                "abandoned": [{"image": "image_name", "prediction": "...", "answer": "answer"}]}
+        }
+    ]
+}
