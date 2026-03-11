@@ -50,7 +50,7 @@ def classify_image(model_id, image_path):
             ],
             extra_body={
                 "reasoning": {
-                    "effort": "xhigh"
+                    "enabled": "true"
                 }
             }
         )
@@ -218,21 +218,15 @@ def main():
     
     print(f"\nEvaluating {len(models_to_evaluate)} new model(s)...")
     
-    new_results = []
     for i, model_id in enumerate(models_to_evaluate, 1):
         try:
             print(f"\n[{i}/{len(models_to_evaluate)}] Evaluating {model_id}...")
             result = evaluate_model(model_id, test_images)
-            new_results.append(result)
+            save_results([result])
+            print_results([result])
         except Exception as e:
             print(f"Error evaluating model {model_id}: {e}")
             continue
-    
-    if new_results:
-        print_results(new_results)
-        save_results(new_results)
-    else:
-        print("\nNo new results to save.")
 
 if __name__ == "__main__":
     main()
