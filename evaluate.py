@@ -44,7 +44,7 @@ def classify_image(model_id, image_path):
                     "role": "user",
                     "content": [
                         {"type": "image_url", "image_url": {"url": image_url}},
-                        {"type": "text", "text": "Is this location abandoned? Reply ONLY with '0' (not abandoned) or '1' (abandoned)."}
+                        {"type": "text", "text": "Is this location abandoned? Reply ONLY with a number 0 or 1 (0 = not abandoned, 1 = abandoned). Target location is near center."}
                     ],
                 }
             ],
