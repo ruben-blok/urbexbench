@@ -37,27 +37,25 @@ def classify_image(model_id, image_path):
         image_data = encode_image_to_base64(image_path)
         image_url = f"data:image/png;base64,{image_data}"
 
-        response = client.responses.create(
+        response = client.chat.completions.create(
             model=model_id,
-            input=[
+            messages=[
                 {
                     "role": "user",
                     "content": [
-                        {"type": "input_image", "image_url": image_url},
-                        {"type": "input_text", "text": "Is this location abandoned? Reply ONLY with '0' (not abandoned) or '1' (abandoned)."}
+                        {"type": "image_url", "image_url": {"url": image_url}},
+                        {"type": "text", "text": "Is this location abandoned? Reply ONLY with '0' (not abandoned) or '1' (abandoned)."}
                     ],
                 }
             ],
+            extra_body={
+                "reasoning": {
+                    "effort": "xhigh"
+                }
+            }
         )
 
-        content = None
-        if hasattr(response, "output_text") and response.output_text:
-            content = response.output_text
-        else:
-            for item in getattr(response, "output", []):
-                if item.get("type") == "output_text":
-                    content = item.get("text")
-                    break
+        content = response.choices[0].message.content
 
         if content is None:
             return None
