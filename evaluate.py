@@ -11,7 +11,7 @@ load_dotenv()
 
 # Configuration
 SCRIPT_DIR = Path(__file__).parent
-WORKSPACE_ROOT = SCRIPT_DIR.parent
+WORKSPACE_ROOT = SCRIPT_DIR  # root of the repository
 MODELS_FILE = WORKSPACE_ROOT / "models.json"
 TEST_IMAGES_DIR = WORKSPACE_ROOT / "img"
 API_KEY = os.getenv("OPENROUTER_API_KEY")
