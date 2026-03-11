@@ -50,7 +50,7 @@ def classify_image(model_id, image_path):
             ],
             extra_body={
                 "reasoning": {
-                    "enabled": "true"
+                    "enabled": True
                 }
             }
         )
