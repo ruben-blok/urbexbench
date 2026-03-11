@@ -135,13 +135,39 @@ def print_results(all_results):
         print(f"\n{model}:")
         print(f"  Total: {total}, Correct: {correct}, Accuracy: {accuracy:.2f}%")
 
+def load_existing_results():
+    """Load existing results from results.json if it exists"""
+    output_file = WORKSPACE_ROOT / "results.json"
+    if output_file.exists():
+        try:
+            with open(output_file, 'r') as f:
+                data = json.load(f)
+                return {r['model'] for r in data.get('model_results', [])}
+        except Exception as e:
+            print(f"Warning: Could not load existing results: {e}")
+    return set()
+
 def save_results(all_results):
     """Save detailed results to JSON file"""
     output_file = WORKSPACE_ROOT / "results.json"
     
+    existing_results = []
+    if output_file.exists():
+        try:
+            with open(output_file, 'r') as f:
+                data = json.load(f)
+                existing_results = data.get('model_results', [])
+        except Exception:
+            pass
+    
+    existing_models = {r['model'] for r in existing_results}
+    for result in all_results:
+        if result['model'] not in existing_models:
+            existing_results.append(result)
+    
     try:
         with open(output_file, 'w') as f:
-            json.dump({'model_results': all_results}, f, indent=2)
+            json.dump({'model_results': existing_results}, f, indent=2)
         print(f"\nDetailed results saved to {output_file}")
     except Exception as e:
         print(f"Error saving results: {e}")
@@ -183,23 +209,32 @@ def main():
         print("Error: No models found in models.json")
         return
     
-    # Evaluate each model
-    all_results = []
-    for i, model_id in enumerate(models, 1):
+    existing_models = load_existing_results()
+    if existing_models:
+        print(f"\nFound existing results for: {', '.join(existing_models)}")
+    
+    models_to_evaluate = [m for m in models if m not in existing_models]
+    if not models_to_evaluate:
+        print("\nAll models have already been evaluated. Use --force to re-evaluate.")
+        return
+    
+    print(f"\nEvaluating {len(models_to_evaluate)} new model(s)...")
+    
+    new_results = []
+    for i, model_id in enumerate(models_to_evaluate, 1):
         try:
-            print(f"\n[{i}/{len(models)}] Evaluating {model_id}...")
+            print(f"\n[{i}/{len(models_to_evaluate)}] Evaluating {model_id}...")
             result = evaluate_model(model_id, test_images)
-            all_results.append(result)
+            new_results.append(result)
         except Exception as e:
             print(f"Error evaluating model {model_id}: {e}")
             continue
     
-    # Print and save results
-    if all_results:
-        print_results(all_results)
-        save_results(all_results)
+    if new_results:
+        print_results(new_results)
+        save_results(new_results)
     else:
-        print("\nNo results to save.")
+        print("\nNo new results to save.")
 
 if __name__ == "__main__":
     main()
