@@ -4,39 +4,24 @@ A benchmark for evaluating vision language models on urban exploration (urbex) i
 
 ## Leaderboard
 
-| Rank | Model | Accuracy | Correct | Total |
-|------|-------|----------|---------|-------|
-| 🥇 1 | google/gemini-3.1-flash-lite-preview | 92.00% | 92 | 100 |
-| 🥈 2 | qwen/qwen3-vl-30b-a3b-thinking | 89.00% | 89 | 100 |
-| 🥉 3 | qwen/qwen3.5-plus-02-15 | 87.00% | 87 | 100 |
-| 4 | qwen/qwen3.5-flash-02-23 | 86.00% | 86 | 100 |
-| 5 | qwen/qwen3-vl-235b-a22b-thinking | 85.00% | 85 | 100 |
-| 5 | moonshotai/kimi-k2.5 | 85.00% | 85 | 100 |
-| 5 | google/gemma-3-12b-it | 85.00% | 85 | 100 |
-| 8 | x-ai/grok-4.1-fast | 82.00% | 82 | 100 |
-| 9 | google/gemma-3-27b-it | 75.00% | 75 | 100 |
-| 10 | google/gemma-3-4b-it | 56.00% | 56 | 100 |
-
-## Project Structure
-
-```
-urbexbench/
-├── evaluate.py           # Main script to evaluate models
-├── stats.py             # Generate statistics from results
-├── models.json          # Configuration of models to test
-├── results.json         # Stores evaluation results
-├── img/
-│   ├── abandoned/       # Test images of abandoned locations
-│   └── not-abandoned/   # Test images of occupied locations
-├── requirements.txt     # Python dependencies
-└── README.md           # This file
-```
+| Rank | Model | Parameters | Accuracy | Total |
+|------|-------|------------|----------|-------|
+| 1🥇 | Gemini 3.1 Flash Lite Preview | - | 92 | 100 |
+| 2🥈 | Qwen3 VL | 30 | 89 | 100 |
+| 3🥉 | Qwen3.5 Plus 02-15 | 397 | 87 | 100 |
+| 4 | Qwen3.5 Flash 02-23 | 35 | 86 | 100 |
+| 5 | Qwen3 VL | 235 | 85 | 100 |
+| 5 | Kimi K2.5 | 1000 | 85 | 100 |
+| 5 | Gemma 3 | 12 | 85 | 100 |
+| 6 | Grok 4.1 Fast | - | 82 | 100 |
+| 7 | Gemma 3 | 27 | 75 | 100 |
+| 8 | Gemma 3 | 4 | 56 | 100 |
 
 ## Setup
 
 ### Prerequisites
 - Python 3.8+
-- OpenRouter API key ([get one here](https://openrouter.ai))
+- OpenRouter API key
 
 ### Installation
 
@@ -49,7 +34,7 @@ cd urbexbench
 2. Create a virtual environment:
 ```bash
 python -m venv .venv
-source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+source .venv/bin/activate  # Windows: .venv\Scripts\activate
 ```
 
 3. Install dependencies:
@@ -82,27 +67,6 @@ The script will:
 Generate and display accuracy statistics:
 ```bash
 python stats.py
-```
-
-Example output:
-```
-======================================================================
-MODEL ACCURACY STATISTICS
-======================================================================
-Model                                         Correct    Total      Accuracy  
-----------------------------------------------------------------------
-google/gemini-3.1-flash-lite-preview          92         100        92.00%
-qwen/qwen3-vl-30b-a3b-thinking                89         100        89.00%
-qwen/qwen3.5-plus-02-15                       87         100        87.00%
-qwen/qwen3.5-flash-02-23                      86         100        86.00%
-qwen/qwen3-vl-235b-a22b-thinking              85         100        85.00%
-moonshotai/kimi-k2.5                          85         100        85.00%
-google/gemma-3-12b-it                         85         100        85.00%
-x-ai/grok-4.1-fast                            82         100        82.00%
-google/gemma-3-27b-it                         75         100        75.00%
-google/gemma-3-4b-it                          56         100        56.00%
-----------------------------------------------------------------------
-Total models evaluated: 10
 ```
 
 ## Models Configuration
@@ -146,19 +110,6 @@ Results are saved in `results.json` with the following structure:
   ]
 }
 ```
-
-## Requirements
-
-See `requirements.txt` for all dependencies. Key requirements:
-- `openai` - OpenAI SDK for API access
-- `python-dotenv` - Environment variable management
-- `tqdm` - Progress bar for evaluations
-
-## Notes
-
-- The evaluation script skips models that have already been tested to avoid duplicate API calls
-- Rate limiting may occur with OpenRouter; the script handles 429 errors gracefully
-- Ground truth labels are determined by the subdirectory structure (`abandoned/` vs `not-abandoned/`)
 
 ## License
 
