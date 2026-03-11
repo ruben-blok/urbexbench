@@ -11,12 +11,11 @@ load_dotenv()
 
 # Configuration
 SCRIPT_DIR = Path(__file__).parent
-WORKSPACE_ROOT = SCRIPT_DIR  # root of the repository
+WORKSPACE_ROOT = SCRIPT_DIR.parent
 MODELS_FILE = WORKSPACE_ROOT / "models.json"
 TEST_IMAGES_DIR = WORKSPACE_ROOT / "img"
 API_KEY = os.getenv("OPENROUTER_API_KEY")
 
-# Initialize OpenAI client with OpenRouter endpoint
 client = OpenAI(api_key=API_KEY, base_url="https://openrouter.ai/api/v1") if API_KEY else None
 
 def load_models():

@@ -1,9 +1,8 @@
-#!/usr/bin/env python3
 import json
 from pathlib import Path
 
 def calculate_stats():
-    results_file = Path(__file__).parent / "results.json"
+    results_file = Path(__file__).parent.parent / "results.json"
     
     if not results_file.exists():
         print(f"Error: results.json not found at {results_file}")
