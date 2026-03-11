@@ -5,17 +5,21 @@ A benchmark for evaluating vision language models on urban exploration (urbex) i
 ## Leaderboard
 
 | Rank | Model | Parameters | Accuracy | Total |
-|------|-------|------------|----------|-------|
-| 1🥇 | Gemini 3.1 Flash Lite Preview | - | 92 | 100 |
-| 2🥈 | Qwen3 VL | 30 | 89 | 100 |
-| 3🥉 | Qwen3.5 Plus 02-15 | 397 | 87 | 100 |
-| 4 | Qwen3.5 Flash 02-23 | 35 | 86 | 100 |
-| 5 | Qwen3 VL | 235 | 85 | 100 |
-| 5 | Kimi K2.5 | 1000 | 85 | 100 |
-| 5 | Gemma 3 | 12 | 85 | 100 |
-| 6 | Grok 4.1 Fast | - | 82 | 100 |
-| 7 | Gemma 3 | 27 | 75 | 100 |
-| 8 | Gemma 3 | 4 | 56 | 100 |
+|----- |-------------------------------|------|----|-----|
+| 1🥇  | Gemini 3.1 Flash Lite Preview | -    | 92 | 100 |
+| 2🥈  | Qwen3 VL                      | 30   | 89 | 100 |
+| 3🥉  | Qwen3.5 Plus 02-15            | 397  | 87 | 100 |
+| 4    | Qwen3.5 Flash 02-23           | 35   | 86 | 100 |
+| 5    | Kimi K2.5                     | 1000 | 85 | 100 |
+| 5    | Qwen3 VL                      | 235  | 85 | 100 |
+| 5    | Gemma 3                       | 12   | 85 | 100 |
+| 6    | Qwen3.5                       | 9    | 84 | 100 |
+| 7    | Grok 4.1 Fast                 | -    | 82 | 100 |
+| 8    | Gemma 3                       | 27   | 75 | 100 |
+| 9    | Ministral 2512                | 14   | 65 | 100 |
+| 10   | Ministral 2512                | 8    | 63 | 100 |
+| 11   | Gemma 3                       | 4    | 56 | 100 |
+| 12   | Ministral 2512                | 3    | 55 | 100 |
 
 ## Setup
 
