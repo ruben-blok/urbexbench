@@ -1,6 +1,11 @@
 # UrbexBench
 
+[Nederlandse vertaling](README_NL.md)
+
 A benchmark for evaluating vision language models on urban exploration (urbex) image classification. This project tests how well different AI models can classify whether a location in satellite imagery is abandoned or not.
+
+### Example Image
+![](img/abandoned/50.397637_4.498408.png)
 
 ## Leaderboard
 
@@ -77,14 +82,6 @@ python stats.py
 ## Models Configuration
 
 Edit `models.json` to specify which models to evaluate. The file contains a list of model IDs available through OpenRouter.
-
-## Test Images
-
-Place test images in:
-- `img/abandoned/` - Images of abandoned locations
-- `img/not-abandoned/` - Images of occupied locations
-
-Images should be in PNG format. The classifier uses a simple prompt asking models to determine if a location is abandoned or not.
 
 ## How It Works
 

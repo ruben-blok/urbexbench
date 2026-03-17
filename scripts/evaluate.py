@@ -9,20 +9,19 @@ from collections import defaultdict
 
 load_dotenv()
 
-# Configuration
-SCRIPT_DIR = Path(__file__).parent
-WORKSPACE_ROOT = SCRIPT_DIR.parent
-MODELS_FILE = WORKSPACE_ROOT / "models.json"
-TEST_IMAGES_DIR = WORKSPACE_ROOT / "img"
-API_KEY = os.getenv("OPENROUTER_API_KEY")
+script_dir = Path(__file__).parent
+workspace_root = script_dir.parent
+models_file = workspace_root / "models.json"
+test_images_dir = workspace_root / "img"
+api_key = os.getenv("OPENROUTER_API_KEY")
 
-client = OpenAI(api_key=API_KEY, base_url="https://openrouter.ai/api/v1") if API_KEY else None
+client = OpenAI(api_key=api_key, base_url="https://openrouter.ai/api/v1") if api_key else None
 
 def load_models():
     """Load model names from models.json"""
-    if not MODELS_FILE.exists():
-        raise FileNotFoundError(f"models.json not found at {MODELS_FILE}")
-    with open(MODELS_FILE, 'r') as f:
+    if not models_file.exists():
+        raise FileNotFoundError(f"models.json not found at {models_file}")
+    with open(models_file, 'r') as f:
         return json.load(f)
 
 def encode_image_to_base64(image_path):
@@ -77,12 +76,12 @@ def load_test_images():
     """Load all test images and their ground truth labels"""
     images = {'abandoned': [], 'not-abandoned': []}
     
-    if not TEST_IMAGES_DIR.exists():
-        print(f"Warning: Test images directory not found at {TEST_IMAGES_DIR}")
+    if not test_images_dir.exists():
+        print(f"Warning: Test images directory not found at {test_images_dir}")
         return images
     
     for label in ['abandoned', 'not-abandoned']:
-        label_dir = TEST_IMAGES_DIR / label
+        label_dir = test_images_dir / label
         if label_dir.exists():
             for image_file in sorted(label_dir.glob('*.png')):
                 images[label].append(str(image_file))
@@ -134,7 +133,7 @@ def print_results(all_results):
 
 def load_existing_results():
     """Load existing results from results.json if it exists"""
-    output_file = WORKSPACE_ROOT / "results.json"
+    output_file = workspace_root / "results.json"
     if output_file.exists():
         try:
             with open(output_file, 'r') as f:
@@ -146,7 +145,7 @@ def load_existing_results():
 
 def save_results(all_results):
     """Save detailed results to JSON file"""
-    output_file = WORKSPACE_ROOT / "results.json"
+    output_file = workspace_root / "results.json"
     
     existing_results = []
     if output_file.exists():
@@ -172,7 +171,7 @@ def save_results(all_results):
 def main():
     """Main evaluation pipeline"""
     # Validate API key
-    if not API_KEY:
+    if not api_key:
         print("Error: OPENAI_API_KEY not found in environment.")
         print("Please add it to your .env file or set it as an environment variable.")
         return
@@ -199,7 +198,7 @@ def main():
     print(f"{'='*80}")
     
     if total_test_images == 0:
-        print("Error: No test images found in", TEST_IMAGES_DIR)
+        print("Error: No test images found in", test_images_dir)
         return
     
     if not models:
