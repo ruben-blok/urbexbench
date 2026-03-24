@@ -36,17 +36,24 @@ def main():
     test_dir = os.path.join(os.path.dirname(__file__), "..", "img")
     predictions = {'abandoned': [], 'not-abandoned': []}
     
+    # Voor elk label
     for label in predictions:
         label_dir = os.path.join(test_dir, label)
         if os.path.exists(label_dir):
+            # Voor elke image
             for image_file in sorted(os.listdir(label_dir)):
                 if image_file.endswith('.png'):
                     image_path = os.path.join(label_dir, image_file)
+
+                    # Maak prediction
                     prediction = classify_image(image_path)
                     print(f"Done processing: {image_file}")
+
+                    # Sla de prediction op
                     if prediction:
                         predictions[label].append({'image': image_file, 'prediction': prediction})
 
+    # Print resultaten
     total = sum(len(p) for p in predictions.values())
     correct = sum(1 for label, preds in predictions.items() for p in preds if p['prediction'] == label)
     accuracy = (correct / total * 100) if total > 0 else 0
