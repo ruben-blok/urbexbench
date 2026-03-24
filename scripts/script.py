@@ -45,15 +45,12 @@ def main():
                 if image_file.endswith('.png'):
                     image_path = os.path.join(label_dir, image_file)
 
-                    # Maak prediction
                     prediction = classify_image(image_path)
                     print(f"Done processing: {image_file}")
 
-                    # Sla de prediction op
                     if prediction:
                         predictions[label].append({'image': image_file, 'prediction': prediction})
 
-    # Print resultaten
     total = sum(len(p) for p in predictions.values())
     correct = sum(1 for label, preds in predictions.items() for p in preds if p['prediction'] == label)
     accuracy = (correct / total * 100) if total > 0 else 0
