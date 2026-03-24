@@ -40,6 +40,7 @@ def main():
     for label in predictions:
         label_dir = os.path.join(test_dir, label)
         if os.path.exists(label_dir):
+            
             # Voor elke image
             for image_file in sorted(os.listdir(label_dir)):
                 if image_file.endswith('.png'):
@@ -53,10 +54,9 @@ def main():
 
     total = sum(len(p) for p in predictions.values())
     correct = sum(1 for label, preds in predictions.items() for p in preds if p['prediction'] == label)
-    accuracy = (correct / total * 100) if total > 0 else 0
     
     print(f"\n{model_id}:")
-    print(f"  Total: {total}, Correct: {correct}, Accuracy: {accuracy:.2f}%")
+    print(f"  Total: {total}, Correct: {correct}")
 
 if __name__ == "__main__":
     main()
