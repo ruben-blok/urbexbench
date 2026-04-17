@@ -42,13 +42,13 @@ def classify_image(model_id, image_path):
                     "role": "user",
                     "content": [
                         {"type": "image_url", "image_url": {"url": image_url}},
-                        {"type": "text", "text": "Is this location abandoned? Reply ONLY with a number 0 (not-abandoned) or 1 (abandoned). Target location is near center."}
+                        {"type": "text", "text": "Is this location abandoned? Reply ONLY with 0 (not-abandoned) or 1 (abandoned). Target location is near center."}
                     ],
                 }
             ],
             extra_body={
                 "reasoning": {
-                    "enabled": True
+                    "effort": "none"
                 }
             }
         )
