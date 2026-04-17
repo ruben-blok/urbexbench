@@ -18,7 +18,7 @@ A benchmark for evaluating vision language models on urban exploration (urbex) i
 | 5    | Kimi K2.5                     | 1000 | 85 | 100 |
 | 5    | Qwen3 VL                      | 235  | 85 | 100 |
 | 5    | Gemma 3                       | 12   | 85 | 100 |
-| 6    | Healer Alpha                  | -    | 84 | 100 |
+| 6    | MiMo V2 Omni                  | -    | 84 | 100 |
 | 6    | Qwen3.5                       | 9    | 84 | 100 |
 | 7    | Grok 4.1 Fast                 | -    | 82 | 100 |
 | 8    | Gemma 3                       | 27   | 75 | 100 |

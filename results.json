@@ -7127,7 +7127,7 @@
       }
     },
     {
-      "model": "openrouter/healer-alpha",
+      "model": "xiaomi/mimo-v2-omni",
       "predictions": {
         "abandoned": [
           {
