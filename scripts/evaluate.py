@@ -1,6 +1,5 @@
 import json
 import os
-import sys
 import base64
 from pathlib import Path
 from dotenv import load_dotenv
@@ -18,10 +17,6 @@ api_key = os.getenv("OPENROUTER_API_KEY")
 
 client = OpenAI(api_key=api_key, base_url="https://openrouter.ai/api/v1") if api_key else None
 
-
-class MissingUsageCostError(Exception):
-    """Raised when an OpenRouter response does not include usage.cost."""
-    pass
 
 def load_models():
     """Load model names from models.json"""
@@ -75,11 +70,6 @@ def classify_image(model_id, image_path):
         )
 
         cost = extract_message_cost(response)
-        # Enforce strict presence of usage.cost: stop immediately if missing.
-        if cost is None:
-            raise MissingUsageCostError(
-                f"Missing usage.cost in OpenRouter response for model '{model_id}', image '{Path(image_path).name}'"
-            )
         content = response.choices[0].message.content
 
         if content is None:
@@ -93,10 +83,6 @@ def classify_image(model_id, image_path):
         return None, cost
 
     except Exception as e:
-        # If it's a missing-cost error, re-raise so the caller can stop execution.
-        if isinstance(e, MissingUsageCostError):
-            raise
-
         if '429' in str(e).lower() or 'rate limit' in str(e).lower():
             # allow rate limits to be handled upstream by returning None
             return None, None
@@ -261,11 +247,6 @@ def main():
             save_results([result])
             print_results([result])
         except Exception as e:
-            # If we encounter a missing usage.cost, stop immediately with non-zero exit.
-            if isinstance(e, MissingUsageCostError):
-                print(f"Fatal: {e}")
-                sys.exit(2)
-
             print(f"Error evaluating model {model_id}: {e}")
             continue
 
