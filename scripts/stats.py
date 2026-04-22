@@ -6,6 +6,7 @@ from xml.sax.saxutils import escape
 ROOT = Path(__file__).resolve().parent.parent
 RESULTS_FILE = ROOT / "results.json"
 OUTPUT_FILE = ROOT / "accuracy_vs_cost.svg"
+X_AXIS_SCALE = 10000
 
 
 def load_json(path: Path):
@@ -48,7 +49,7 @@ def build_scatter_svg(stats, output_file: Path):
     plot_width = width - left - right
     plot_height = height - top - bottom
 
-    costs = [s["avg_cost"] for s in stats]
+    costs = [s["avg_cost"] * X_AXIS_SCALE for s in stats]
     accuracies = [s["accuracy"] for s in stats]
 
     x_min = min(costs)
@@ -84,7 +85,7 @@ def build_scatter_svg(stats, output_file: Path):
         '<rect width="100%" height="100%" fill="#ffffff"/>',
         f'<text x="{width / 2:.2f}" y="42" text-anchor="middle" '
         'font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#111827">'
-        'Model Accuracy vs Average Cost / Message</text>',
+        f'Model Accuracy vs Average Cost / Message (x{X_AXIS_SCALE})</text>',
     ]
 
     # Grid and axes.
@@ -117,7 +118,7 @@ def build_scatter_svg(stats, output_file: Path):
             f'<line x1="{left}" y1="{top}" x2="{left}" y2="{top + plot_height}" stroke="#111827" stroke-width="1.5"/>',
             f'<line x1="{left}" y1="{top + plot_height}" x2="{left + plot_width}" y2="{top + plot_height}" stroke="#111827" stroke-width="1.5"/>',
             f'<text x="{width / 2:.2f}" y="{height - 28}" text-anchor="middle" '
-            'font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#111827">Average Cost / Message</text>',
+            f'font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#111827">Average Cost / Message (x{X_AXIS_SCALE})</text>',
             (
                 f'<text x="28" y="{top + plot_height / 2:.2f}" text-anchor="middle" '
                 'font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#111827" '
@@ -128,11 +129,12 @@ def build_scatter_svg(stats, output_file: Path):
     )
 
     for stat in stats:
-        x = x_to_px(stat["avg_cost"])
+        scaled_cost = stat["avg_cost"] * X_AXIS_SCALE
+        x = x_to_px(scaled_cost)
         y = y_to_px(stat["accuracy"])
         label = escape(short_label(stat["model"]))
         tooltip = escape(
-            f"{stat['model']} | accuracy {stat['accuracy']:.2f}% | avg cost {format_cost(stat['avg_cost'])}"
+            f"{stat['model']} | accuracy {stat['accuracy']:.2f}% | avg cost {format_cost(stat['avg_cost'])} | x{X_AXIS_SCALE} {format_cost(scaled_cost)}"
         )
         if x > left + plot_width - 140:
             label_x = x - 12
