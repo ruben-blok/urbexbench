@@ -16,7 +16,8 @@ def load_json(path: Path):
 def format_cost(value):
     if value is None:
         return "N/A"
-    return f"{value:.2e}"
+    text = f"{value:.6f}".rstrip("0").rstrip(".")
+    return text if text else "0"
 
 
 def average_message_cost(predictions):
