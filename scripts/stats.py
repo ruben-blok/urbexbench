@@ -48,6 +48,8 @@ def build_scatter_svg(stats, output_file: Path):
     bottom = 120
     plot_width = width - left - right
     plot_height = height - top - bottom
+    x_mid = left + plot_width / 2
+    y_mid = top + plot_height / 2
 
     costs = [s["avg_cost"] * X_AXIS_SCALE for s in stats]
     accuracies = [s["accuracy"] for s in stats]
@@ -88,13 +90,20 @@ def build_scatter_svg(stats, output_file: Path):
         f'Model Accuracy vs Average Cost / Message (x{X_AXIS_SCALE})</text>',
     ]
 
-    # Grid and axes.
+    # Quadrant backgrounds.
+    svg.extend(
+        [
+            f'<rect x="{left}" y="{top}" width="{plot_width / 2:.2f}" height="{plot_height / 2:.2f}" fill="#dcfce7"/>',
+            f'<rect x="{x_mid:.2f}" y="{top}" width="{plot_width / 2:.2f}" height="{plot_height / 2:.2f}" fill="#f9fafb"/>',
+            f'<rect x="{left}" y="{y_mid:.2f}" width="{plot_width / 2:.2f}" height="{plot_height / 2:.2f}" fill="#f9fafb"/>',
+            f'<rect x="{x_mid:.2f}" y="{y_mid:.2f}" width="{plot_width / 2:.2f}" height="{plot_height / 2:.2f}" fill="#f9fafb"/>',
+            f'<text x="{left + 16}" y="{top + 24}" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#166534">Most attractive quadrant</text>',
+        ]
+    )
+
+    # Axis tick labels.
     for tick in range(0, 101, 20):
         y = y_to_px(tick)
-        svg.append(
-            f'<line x1="{left}" y1="{y:.2f}" x2="{left + plot_width}" y2="{y:.2f}" '
-            'stroke="#e5e7eb" stroke-width="1"/>'
-        )
         svg.append(
             f'<text x="{left - 12}" y="{y + 4:.2f}" text-anchor="end" '
             'font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#374151">'
@@ -103,10 +112,6 @@ def build_scatter_svg(stats, output_file: Path):
 
     for tick in x_tick_labels():
         x = x_to_px(tick)
-        svg.append(
-            f'<line x1="{x:.2f}" y1="{top}" x2="{x:.2f}" y2="{top + plot_height}" '
-            'stroke="#e5e7eb" stroke-width="1"/>'
-        )
         svg.append(
             f'<text x="{x:.2f}" y="{top + plot_height + 24}" text-anchor="middle" '
             'font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#374151">'
@@ -117,6 +122,8 @@ def build_scatter_svg(stats, output_file: Path):
         [
             f'<line x1="{left}" y1="{top}" x2="{left}" y2="{top + plot_height}" stroke="#111827" stroke-width="1.5"/>',
             f'<line x1="{left}" y1="{top + plot_height}" x2="{left + plot_width}" y2="{top + plot_height}" stroke="#111827" stroke-width="1.5"/>',
+            f'<line x1="{x_mid:.2f}" y1="{top}" x2="{x_mid:.2f}" y2="{top + plot_height}" stroke="#d1d5db" stroke-width="1.5"/>',
+            f'<line x1="{left}" y1="{y_mid:.2f}" x2="{left + plot_width}" y2="{y_mid:.2f}" stroke="#d1d5db" stroke-width="1.5"/>',
             f'<text x="{width / 2:.2f}" y="{height - 28}" text-anchor="middle" '
             f'font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#111827">Average Cost / Message (x{X_AXIS_SCALE})</text>',
             (
