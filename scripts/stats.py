@@ -7,7 +7,7 @@ from xml.sax.saxutils import escape
 ROOT = Path(__file__).resolve().parent.parent
 RESULTS_FILE = ROOT / "results.json"
 OUTPUT_FILE = ROOT / "accuracy_vs_cost.svg"
-X_AXIS_SCALE = 10000
+X_AXIS_SCALE = 1000
 
 
 def load_json(path: Path):
@@ -19,6 +19,11 @@ def format_cost(value):
     if value is None:
         return "N/A"
     text = f"{value:.6f}".rstrip("0").rstrip(".")
+    return text if text else "0"
+
+
+def format_percentage(value):
+    text = f"{value:.2f}".rstrip("0").rstrip(".")
     return text if text else "0"
 
 
@@ -96,8 +101,18 @@ def build_scatter_svg(stats, output_file: Path):
     x_min = math.floor(x_min / x_tick_step) * x_tick_step
     x_max = math.ceil(x_max / x_tick_step) * x_tick_step
 
-    y_min = 0
-    y_max = 100
+    y_min = min(accuracies)
+    y_max = max(accuracies)
+    y_range = y_max - y_min
+    if y_range == 0:
+        y_padding = max(abs(y_max) * 0.1, 1.0)
+    else:
+        y_padding = y_range * 0.1
+    y_min = max(0, y_min - y_padding)
+    y_max = min(100, y_max + y_padding)
+    y_tick_step = nice_number((y_max - y_min) / 8, round_up=True)
+    y_min = max(0, math.floor(y_min / y_tick_step) * y_tick_step)
+    y_max = min(100, math.ceil(y_max / y_tick_step) * y_tick_step)
 
     def x_to_px(value):
         return left + (value - x_min) / (x_max - x_min) * plot_width
@@ -140,13 +155,15 @@ def build_scatter_svg(stats, output_file: Path):
     )
 
     # Axis tick labels.
-    for tick in range(0, 101, 20):
+    tick = y_min
+    while tick <= y_max + (y_tick_step / 1000):
         y = y_to_px(tick)
         svg.append(
             f'<text x="{left - 12}" y="{y + 4:.2f}" text-anchor="end" '
             'font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#374151">'
-            f'{tick}%</text>'
+            f'{format_percentage(tick)}%</text>'
         )
+        tick = round(tick + y_tick_step, 10)
 
     for tick in x_tick_labels():
         x = x_to_px(tick)
