@@ -1,11 +1,9 @@
 # UrbexBench
 
-[Nederlandse vertaling](README_NL.md)
-
 A benchmark for evaluating vision language models on urban exploration (urbex) image classification. This project tests how well different AI models can classify whether a location in satellite imagery is abandoned or not.
 
 ### Example Image
-![](img/abandoned/50.397637_4.498408.png)
+![](img/abandoned/50.339378_7.623978.png)
 
 ## Leaderboard
 
@@ -26,6 +24,8 @@ A benchmark for evaluating vision language models on urban exploration (urbex) i
 | 10   | Ministral 2512                | 8    | 63 | 100 |
 | 11   | Gemma 3                       | 4    | 56 | 100 |
 | 12   | Ministral 2512                | 3    | 55 | 100 |
+
+![](accuracy_vs_cost.svg)
 
 ## Setup
 
@@ -64,7 +64,7 @@ OPENROUTER_API_KEY=your_api_key_here
 
 Evaluate all models that haven't been tested yet:
 ```bash
-python evaluate.py
+python scripts/evaluate.py
 ```
 
 The script will:
@@ -76,7 +76,7 @@ The script will:
 
 Generate and display accuracy statistics:
 ```bash
-python stats.py
+python scripts/stats.py
 ```
 
 ## Models Configuration
@@ -89,29 +89,6 @@ Edit `models.json` to specify which models to evaluate. The file contains a list
 2. **Prompt**: Models receive the image and a simple question: "Is this location abandoned?"
 3. **Parsing**: The model's response is parsed for '0' (not-abandoned) or '1' (abandoned)
 4. **Results**: Predictions are stored with ground truth labels for accuracy calculation
-
-## Results Format
-
-Results are saved in `results.json` with the following structure:
-```json
-{
-  "model_results": [
-    {
-      "model": "google/gemini-3.1-flash-lite-preview",
-      "predictions": {
-        "abandoned": [
-          {
-            "image": "image_name.png",
-            "prediction": "abandoned",
-            "answer": "abandoned"
-          }
-        ],
-        "not-abandoned": [...]
-      }
-    }
-  ]
-}
-```
 
 ## License
 
