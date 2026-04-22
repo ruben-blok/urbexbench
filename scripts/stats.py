@@ -71,9 +71,6 @@ def build_scatter_svg(stats, output_file: Path):
         f'<text x="{width / 2:.2f}" y="42" text-anchor="middle" '
         'font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#111827">'
         'Model Accuracy vs Cost</text>',
-        f'<text x="{width / 2:.2f}" y="68" text-anchor="middle" '
-        'font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#4b5563">'
-        'Only models with a known cost are plotted</text>',
     ]
 
     # Grid and axes.
@@ -138,11 +135,6 @@ def build_scatter_svg(stats, output_file: Path):
             f'{label}</text></g>'
         )
 
-    svg.append(
-        f'<text x="{left}" y="{height - 58}" font-family="Arial, Helvetica, sans-serif" '
-        'font-size="12" fill="#6b7280">'
-        f'Plotted {len(stats)} models with a known cost</text>'
-    )
     svg.append('</svg>')
 
     output_file.write_text("\n".join(svg), encoding="utf-8")
