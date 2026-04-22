@@ -1,6 +1,7 @@
 import json
 import os
 import base64
+import time
 from pathlib import Path
 from dotenv import load_dotenv
 from openai import OpenAI
@@ -46,49 +47,80 @@ def extract_message_cost(response):
 
 
 def classify_image(model_id, image_path):
-    """Send image to model API for classification using OpenAI SDK"""
-    try:
-        image_data = encode_image_to_base64(image_path)
-        image_url = f"data:image/png;base64,{image_data}"
+    """Send image to model API for classification using OpenAI SDK.
 
-        response = client.chat.completions.create(
-            model=model_id,
-            messages=[
-                {
-                    "role": "user",
-                    "content": [
-                        {"type": "image_url", "image_url": {"url": image_url}},
-                        {"type": "text", "text": "Is this location abandoned? Reply ONLY with 0 (not-abandoned) or 1 (abandoned). Target location is near center."}
-                    ],
+    Retries until OpenRouter returns a usable 0/1 response.
+    """
+    image_data = encode_image_to_base64(image_path)
+    image_url = f"data:image/png;base64,{image_data}"
+
+    attempt = 0
+    backoff_seconds = 1
+
+    while True:
+        attempt += 1
+        try:
+            response = client.chat.completions.create(
+                model=model_id,
+                messages=[
+                    {
+                        "role": "user",
+                        "content": [
+                            {"type": "image_url", "image_url": {"url": image_url}},
+                            {"type": "text", "text": "Is this location abandoned? Reply ONLY with 0 (not-abandoned) or 1 (abandoned). Target location is near center."}
+                        ],
+                    }
+                ],
+                extra_body={
+                    "reasoning": {
+                        "effort": "none"
+                    }
                 }
-            ],
-            extra_body={
-                "reasoning": {
-                    "effort": "none"
-                }
-            }
-        )
+            )
 
-        cost = extract_message_cost(response)
-        content = response.choices[0].message.content
+            cost = extract_message_cost(response)
+            choices = getattr(response, "choices", None)
+            if not choices:
+                error = getattr(response, "error", None)
+                print(
+                    f"Warning: empty response for {Path(image_path).name} with {model_id} "
+                    f"on attempt {attempt}: {error or 'no choices'}; retrying..."
+                )
+                time.sleep(backoff_seconds)
+                backoff_seconds = min(backoff_seconds * 2, 30)
+                continue
 
-        if content is None:
-            return None, cost
+            message = getattr(choices[0], "message", None)
+            content = getattr(message, "content", None) if message is not None else None
+            if content is None:
+                print(
+                    f"Warning: empty content for {Path(image_path).name} with {model_id} "
+                    f"on attempt {attempt}; retrying..."
+                )
+                time.sleep(backoff_seconds)
+                backoff_seconds = min(backoff_seconds * 2, 30)
+                continue
 
-        content = content.strip()
-        if '0' in content:
-            return 'not-abandoned', cost
-        elif '1' in content:
-            return 'abandoned', cost
-        return None, cost
+            content = content.strip()
+            if content == '0':
+                return 'not-abandoned', cost
+            if content == '1':
+                return 'abandoned', cost
 
-    except Exception as e:
-        if '429' in str(e).lower() or 'rate limit' in str(e).lower():
-            # allow rate limits to be handled upstream by returning None
-            return None, None
-        else:
-            print(f"Error classifying {Path(image_path).name} with {model_id}: {e}")
-            return None, None
+            print(
+                f"Warning: unexpected response '{content}' for {Path(image_path).name} "
+                f"with {model_id} on attempt {attempt}; retrying..."
+            )
+            time.sleep(backoff_seconds)
+            backoff_seconds = min(backoff_seconds * 2, 30)
+
+        except Exception as e:
+            print(
+                f"Error classifying {Path(image_path).name} with {model_id} "
+                f"on attempt {attempt}: {e}; retrying..."
+            )
+            time.sleep(backoff_seconds)
+            backoff_seconds = min(backoff_seconds * 2, 30)
 
 def load_test_images():
     """Load all test images and their ground truth labels"""

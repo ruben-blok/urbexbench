@@ -4837,1203 +4837,6 @@
       }
     },
     {
-      "model": "google/gemma-4-31b-it",
-      "predictions": {
-        "abandoned": [
-          {
-            "image": "37.12905_-8.019761.png",
-            "prediction": "not-abandoned",
-            "answer": "abandoned",
-            "cost": 4.25106e-05
-          },
-          {
-            "image": "40.32243_9.37418.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 4.2372e-05
-          },
-          {
-            "image": "43.6514_6.8988.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 4.2372e-05
-          },
-          {
-            "image": "44.471037_11.267935.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 4.2372e-05
-          },
-          {
-            "image": "45.910527_9.000031.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 4.25106e-05
-          },
-          {
-            "image": "45.979062_11.342562.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "46.181528_8.901417.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 4.2372e-05
-          },
-          {
-            "image": "46.183315_9.039352.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 4.2372e-05
-          },
-          {
-            "image": "46.644932_12.233495.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "46.660367_4.344328.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "46.693371_6.8259232.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "46.703361_7.432356.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "47.32996_8.597989.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "47.635829_9.164958.png",
-            "prediction": "not-abandoned",
-            "answer": "abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "48.133868_11.645393.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "48.50796_9.025113.png",
-            "prediction": "not-abandoned",
-            "answer": "abandoned",
-            "cost": 4.2372e-05
-          },
-          {
-            "image": "48.758121_9.125116.png",
-            "prediction": "not-abandoned",
-            "answer": "abandoned",
-            "cost": 4.2372e-05
-          },
-          {
-            "image": "48.76529_9.132054.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 4.2372e-05
-          },
-          {
-            "image": "48.895467_9.153595.png",
-            "prediction": "not-abandoned",
-            "answer": "abandoned",
-            "cost": 4.2372e-05
-          },
-          {
-            "image": "49.09679_1.55579.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "49.108814_6.202335.png",
-            "prediction": "not-abandoned",
-            "answer": "abandoned",
-            "cost": 6.0588e-05
-          },
-          {
-            "image": "49.174644_5.430422.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "49.336989_7.824956.png",
-            "prediction": "not-abandoned",
-            "answer": "abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "49.344703_7.925985.png",
-            "prediction": "not-abandoned",
-            "answer": "abandoned",
-            "cost": 4.25106e-05
-          },
-          {
-            "image": "49.350008_7.871472.png",
-            "prediction": "not-abandoned",
-            "answer": "abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "49.355203_8.188554.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "49.370104_8.093999.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "49.380827_6.257147.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "49.39091_6.92652.png",
-            "prediction": "not-abandoned",
-            "answer": "abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "49.395474_7.6964.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "49.397211_6.799492.png",
-            "prediction": "not-abandoned",
-            "answer": "abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "49.4027_1.1089.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "49.407376_6.084373.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 6.0588e-05
-          },
-          {
-            "image": "49.43373_6.23802.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "49.452807_7.863903.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "49.541677_7.505745.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "49.549364_6.779092.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "49.549989_7.487298.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "49.556683_6.80128.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 4.25106e-05
-          },
-          {
-            "image": "49.599964_7.442098.png",
-            "prediction": "not-abandoned",
-            "answer": "abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "49.64225_6.930194.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "49.649472_9.223905.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 6.0588e-05
-          },
-          {
-            "image": "49.652542_7.723586.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 6.0588e-05
-          },
-          {
-            "image": "49.654329_6.93072.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 4.25106e-05
-          },
-          {
-            "image": "49.659817_6.901053.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 4.2372e-05
-          },
-          {
-            "image": "49.750854_7.425306.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 4.2372e-05
-          },
-          {
-            "image": "49.795618_7.828682.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 4.2372e-05
-          },
-          {
-            "image": "49.863611_7.164444.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "49.996806_6.795806.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 6.0588e-05
-          },
-          {
-            "image": "50.061814_6.923396.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "50.20461_7.39846.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "50.330981_7.634114.png",
-            "prediction": "not-abandoned",
-            "answer": "abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "50.339378_7.623978.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "50.417415_7.165952.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 4.2372e-05
-          },
-          {
-            "image": "50.450942_7.169317.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "50.506423_6.576391.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 4.2372e-05
-          },
-          {
-            "image": "50.511576_4.281619.png",
-            "prediction": "not-abandoned",
-            "answer": "abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "50.518492_6.203083.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 6.0588e-05
-          },
-          {
-            "image": "50.51_5.294117.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 4.2372e-05
-          },
-          {
-            "image": "50.604205_6.435434.png",
-            "prediction": "not-abandoned",
-            "answer": "abandoned",
-            "cost": 4.2372e-05
-          },
-          {
-            "image": "50.60815_5.2653.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "50.624933_6.291767.png",
-            "prediction": "not-abandoned",
-            "answer": "abandoned",
-            "cost": 4.2372e-05
-          },
-          {
-            "image": "50.641188_6.464688.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 4.2372e-05
-          },
-          {
-            "image": "50.652367_6.336464.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 4.2372e-05
-          },
-          {
-            "image": "50.660608_6.287963.png",
-            "prediction": "not-abandoned",
-            "answer": "abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "50.703085_6.184388.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "50.766021_6.412716.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "50.783695_6.427.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 4.2372e-05
-          },
-          {
-            "image": "50.80961_6.41323.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 4.2372e-05
-          },
-          {
-            "image": "50.857494_8.040303.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 4.2372e-05
-          },
-          {
-            "image": "50.883495_6.596341.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 4.2372e-05
-          },
-          {
-            "image": "50.884294_6.591657.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "50.891734_6.718492.png",
-            "prediction": "not-abandoned",
-            "answer": "abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "50.955827_11.034845.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "50.956438_11.033812.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 4.2372e-05
-          },
-          {
-            "image": "51.1759863618_4.76696199078.png",
-            "prediction": "not-abandoned",
-            "answer": "abandoned",
-            "cost": 4.2372e-05
-          },
-          {
-            "image": "51.35429_4.963958.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 4.2372e-05
-          },
-          {
-            "image": "51.421142_7.480724.png",
-            "prediction": "not-abandoned",
-            "answer": "abandoned",
-            "cost": 4.2372e-05
-          },
-          {
-            "image": "51.44397_7.240064.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 4.2372e-05
-          },
-          {
-            "image": "51.483283_7.470847.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 4.25106e-05
-          },
-          {
-            "image": "51.516114_7.432085.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 4.2372e-05
-          },
-          {
-            "image": "51.516581_9.984422.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 4.2372e-05
-          },
-          {
-            "image": "51.519812_6.635688.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 4.2372e-05
-          },
-          {
-            "image": "51.522047_8.112408.png",
-            "prediction": "not-abandoned",
-            "answer": "abandoned",
-            "cost": 6.0588e-05
-          },
-          {
-            "image": "51.576917_8.124767.png",
-            "prediction": "not-abandoned",
-            "answer": "abandoned",
-            "cost": 4.2372e-05
-          },
-          {
-            "image": "51.578312_8.1371.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 4.2372e-05
-          },
-          {
-            "image": "51.579654_8.143403.png",
-            "prediction": "not-abandoned",
-            "answer": "abandoned",
-            "cost": 4.2372e-05
-          },
-          {
-            "image": "51.633992_8.004572.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "51.636725_7.043796.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "51.661015_7.134612.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 4.2372e-05
-          },
-          {
-            "image": "51.705151_7.117108.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 4.2372e-05
-          },
-          {
-            "image": "51.7922_5.8581.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 4.2372e-05
-          },
-          {
-            "image": "51.854931_6.66073.png",
-            "prediction": "not-abandoned",
-            "answer": "abandoned",
-            "cost": 4.2372e-05
-          },
-          {
-            "image": "51.858015_6.662587.png",
-            "prediction": "not-abandoned",
-            "answer": "abandoned",
-            "cost": 4.2372e-05
-          },
-          {
-            "image": "51.963485_7.671396.png",
-            "prediction": "not-abandoned",
-            "answer": "abandoned",
-            "cost": 6.0588e-05
-          },
-          {
-            "image": "52.196044_9.795652.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 4.2372e-05
-          },
-          {
-            "image": "52.440833_9.776667.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 4.2372e-05
-          },
-          {
-            "image": "52.827688_8.002062.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "53.171951_12.654179.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 4.2372e-05
-          },
-          {
-            "image": "53.582062_8.118937.png",
-            "prediction": "abandoned",
-            "answer": "abandoned",
-            "cost": 2.37996e-05
-          }
-        ],
-        "not-abandoned": [
-          {
-            "image": "25.5196741_-80.3684854.png",
-            "prediction": "not-abandoned",
-            "answer": "not-abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "25.5880191_-80.4760991.png",
-            "prediction": "abandoned",
-            "answer": "not-abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "25.6118608_-80.516194.png",
-            "prediction": "not-abandoned",
-            "answer": "not-abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "25.648298_-80.5295874.png",
-            "prediction": "abandoned",
-            "answer": "not-abandoned",
-            "cost": 4.2372e-05
-          },
-          {
-            "image": "29.9000765_-95.5880304.png",
-            "prediction": "not-abandoned",
-            "answer": "not-abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "29.961575_-95.6454394.png",
-            "prediction": "not-abandoned",
-            "answer": "not-abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "30.186829_-97.839562.png",
-            "prediction": "abandoned",
-            "answer": "not-abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "30.3415114_-90.9928485.png",
-            "prediction": "abandoned",
-            "answer": "not-abandoned",
-            "cost": 4.2372e-05
-          },
-          {
-            "image": "30.3851921_-86.2426793.png",
-            "prediction": "abandoned",
-            "answer": "not-abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "32.3341442_-96.9448254.png",
-            "prediction": "not-abandoned",
-            "answer": "not-abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "32.4372011_-97.0813886.png",
-            "prediction": "not-abandoned",
-            "answer": "not-abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "32.555206_-117.039407.png",
-            "prediction": "abandoned",
-            "answer": "not-abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "32.673854_-117.023454.png",
-            "prediction": "abandoned",
-            "answer": "not-abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "32.675928_-116.99895.png",
-            "prediction": "not-abandoned",
-            "answer": "not-abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "32.8746113_-80.0832425.png",
-            "prediction": "abandoned",
-            "answer": "not-abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "32.947909_-117.098386.png",
-            "prediction": "abandoned",
-            "answer": "not-abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "32.971197_-116.998179.png",
-            "prediction": "not-abandoned",
-            "answer": "not-abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "33.046317_-117.019417.png",
-            "prediction": "not-abandoned",
-            "answer": "not-abandoned",
-            "cost": 4.2372e-05
-          },
-          {
-            "image": "33.060572_-116.990458.png",
-            "prediction": "abandoned",
-            "answer": "not-abandoned",
-            "cost": 4.2372e-05
-          },
-          {
-            "image": "33.1245601_-117.1410007.png",
-            "prediction": "abandoned",
-            "answer": "not-abandoned",
-            "cost": 6.0588e-05
-          },
-          {
-            "image": "33.203718_-116.953302.png",
-            "prediction": "not-abandoned",
-            "answer": "not-abandoned",
-            "cost": 6.0588e-05
-          },
-          {
-            "image": "33.245904_-117.104901.png",
-            "prediction": "not-abandoned",
-            "answer": "not-abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "33.250271_-117.004563.png",
-            "prediction": "not-abandoned",
-            "answer": "not-abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "33.252739_-117.084465.png",
-            "prediction": "abandoned",
-            "answer": "not-abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "33.259223_-117.136879.png",
-            "prediction": "abandoned",
-            "answer": "not-abandoned",
-            "cost": 4.2372e-05
-          },
-          {
-            "image": "33.367399_-117.158215.png",
-            "prediction": "abandoned",
-            "answer": "not-abandoned",
-            "cost": 6.0588e-05
-          },
-          {
-            "image": "33.415173_-117.16286.png",
-            "prediction": "not-abandoned",
-            "answer": "not-abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "33.8750334_-83.2857633.png",
-            "prediction": "abandoned",
-            "answer": "not-abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "33.8847923_-83.2672219.png",
-            "prediction": "not-abandoned",
-            "answer": "not-abandoned",
-            "cost": 4.2372e-05
-          },
-          {
-            "image": "35.8404067_-80.9315635.png",
-            "prediction": "abandoned",
-            "answer": "not-abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "35.8562691_-79.0528311.png",
-            "prediction": "abandoned",
-            "answer": "not-abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "35.8983483_-78.9922912.png",
-            "prediction": "abandoned",
-            "answer": "not-abandoned",
-            "cost": 4.2372e-05
-          },
-          {
-            "image": "35.963677_-79.1637242.png",
-            "prediction": "abandoned",
-            "answer": "not-abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "35.9967708_-79.0790439.png",
-            "prediction": "abandoned",
-            "answer": "not-abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "36.0051179_-79.1416606.png",
-            "prediction": "abandoned",
-            "answer": "not-abandoned",
-            "cost": 4.2372e-05
-          },
-          {
-            "image": "36.036808_-79.1477145.png",
-            "prediction": "abandoned",
-            "answer": "not-abandoned",
-            "cost": 4.25106e-05
-          },
-          {
-            "image": "36.1521696_-78.9707161.png",
-            "prediction": "abandoned",
-            "answer": "not-abandoned",
-            "cost": 4.25106e-05
-          },
-          {
-            "image": "36.1813864_-79.1274972.png",
-            "prediction": "abandoned",
-            "answer": "not-abandoned",
-            "cost": 4.2372e-05
-          },
-          {
-            "image": "36.2113671_-78.959938.png",
-            "prediction": "abandoned",
-            "answer": "not-abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "37.196813_-77.382041.png",
-            "prediction": "abandoned",
-            "answer": "not-abandoned",
-            "cost": 4.2372e-05
-          },
-          {
-            "image": "37.3372279_-121.7696268.png",
-            "prediction": "abandoned",
-            "answer": "not-abandoned",
-            "cost": 4.2372e-05
-          },
-          {
-            "image": "37.3761936_-121.7947693.png",
-            "prediction": "not-abandoned",
-            "answer": "not-abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "37.4978317_-97.2796128.png",
-            "prediction": "abandoned",
-            "answer": "not-abandoned",
-            "cost": 4.2372e-05
-          },
-          {
-            "image": "37.504345_-97.2788355.png",
-            "prediction": "abandoned",
-            "answer": "not-abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "38.4985645_-90.7292812.png",
-            "prediction": "not-abandoned",
-            "answer": "not-abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "38.5462005_-90.7053819.png",
-            "prediction": "abandoned",
-            "answer": "not-abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "38.582047_-90.6993896.png",
-            "prediction": "not-abandoned",
-            "answer": "not-abandoned",
-            "cost": 4.25106e-05
-          },
-          {
-            "image": "38.9710152_-95.5707987.png",
-            "prediction": "not-abandoned",
-            "answer": "not-abandoned",
-            "cost": 4.2372e-05
-          },
-          {
-            "image": "38.9769117_-95.7403239.png",
-            "prediction": "not-abandoned",
-            "answer": "not-abandoned",
-            "cost": 4.25106e-05
-          },
-          {
-            "image": "39.0100045_-95.5054477.png",
-            "prediction": "not-abandoned",
-            "answer": "not-abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "39.1018138_-95.6095988.png",
-            "prediction": "not-abandoned",
-            "answer": "not-abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "39.3990818_-76.6684792.png",
-            "prediction": "not-abandoned",
-            "answer": "not-abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "39.523812_-104.7530193.png",
-            "prediction": "abandoned",
-            "answer": "not-abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "40.0504391_-105.357638.png",
-            "prediction": "abandoned",
-            "answer": "not-abandoned",
-            "cost": 4.2372e-05
-          },
-          {
-            "image": "40.8163446_-73.1865186.png",
-            "prediction": "not-abandoned",
-            "answer": "not-abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "41.0709877_-73.6839156.png",
-            "prediction": "abandoned",
-            "answer": "not-abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "41.2198075_-74.1107966.png",
-            "prediction": "abandoned",
-            "answer": "not-abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "41.6537933_-72.6675044.png",
-            "prediction": "not-abandoned",
-            "answer": "not-abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "41.9015437_-74.7050354.png",
-            "prediction": "not-abandoned",
-            "answer": "not-abandoned",
-            "cost": 6.0588e-05
-          },
-          {
-            "image": "42.053788_-78.9665416.png",
-            "prediction": "not-abandoned",
-            "answer": "not-abandoned",
-            "cost": 4.25106e-05
-          },
-          {
-            "image": "42.1319067_-76.7304614.png",
-            "prediction": "abandoned",
-            "answer": "not-abandoned",
-            "cost": 4.25106e-05
-          },
-          {
-            "image": "42.245111_-78.0809491.png",
-            "prediction": "abandoned",
-            "answer": "not-abandoned",
-            "cost": 4.2372e-05
-          },
-          {
-            "image": "42.2655808_-77.814612.png",
-            "prediction": "abandoned",
-            "answer": "not-abandoned",
-            "cost": 4.2372e-05
-          },
-          {
-            "image": "42.2756628_-78.10102.png",
-            "prediction": "not-abandoned",
-            "answer": "not-abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "42.3616122_-75.6166578.png",
-            "prediction": "abandoned",
-            "answer": "not-abandoned",
-            "cost": 4.2372e-05
-          },
-          {
-            "image": "42.4055407_-78.1704304.png",
-            "prediction": "abandoned",
-            "answer": "not-abandoned",
-            "cost": 6.0588e-05
-          },
-          {
-            "image": "42.5829724_-77.7923313.png",
-            "prediction": "not-abandoned",
-            "answer": "not-abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "42.7073352_-74.1105335.png",
-            "prediction": "abandoned",
-            "answer": "not-abandoned",
-            "cost": 4.2372e-05
-          },
-          {
-            "image": "42.7078023_-77.157332.png",
-            "prediction": "not-abandoned",
-            "answer": "not-abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "42.7651381_-77.4645365.png",
-            "prediction": "not-abandoned",
-            "answer": "not-abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "42.7983431_-73.7711479.png",
-            "prediction": "not-abandoned",
-            "answer": "not-abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "42.9701804_-75.9418318.png",
-            "prediction": "not-abandoned",
-            "answer": "not-abandoned",
-            "cost": 4.2372e-05
-          },
-          {
-            "image": "43.1373042_-77.9306463.png",
-            "prediction": "abandoned",
-            "answer": "not-abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "43.2543556_-76.6393113.png",
-            "prediction": "abandoned",
-            "answer": "not-abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "43.4144615_-76.5375148.png",
-            "prediction": "not-abandoned",
-            "answer": "not-abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "43.7283254_0.2664517.png",
-            "prediction": "not-abandoned",
-            "answer": "not-abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "43.7973355_7.6688835.png",
-            "prediction": "not-abandoned",
-            "answer": "not-abandoned",
-            "cost": 4.25106e-05
-          },
-          {
-            "image": "44.6987288_-69.7535413.png",
-            "prediction": "not-abandoned",
-            "answer": "not-abandoned",
-            "cost": 6.0588e-05
-          },
-          {
-            "image": "44.886767_20.678447.png",
-            "prediction": "not-abandoned",
-            "answer": "not-abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "44.8912992_-89.2556515.png",
-            "prediction": "not-abandoned",
-            "answer": "not-abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "44.90348_20.6756.png",
-            "prediction": "abandoned",
-            "answer": "not-abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "44.9680789_10.1608107.png",
-            "prediction": "abandoned",
-            "answer": "not-abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "45.0208666_-122.9796365.png",
-            "prediction": "not-abandoned",
-            "answer": "not-abandoned",
-            "cost": 4.2372e-05
-          },
-          {
-            "image": "45.0278851_7.7017821.png",
-            "prediction": "not-abandoned",
-            "answer": "not-abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "45.0350462_-122.7208681.png",
-            "prediction": "not-abandoned",
-            "answer": "not-abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "45.1259499_-122.8516287.png",
-            "prediction": "not-abandoned",
-            "answer": "not-abandoned",
-            "cost": 6.0588e-05
-          },
-          {
-            "image": "46.083067_19.681638.png",
-            "prediction": "abandoned",
-            "answer": "not-abandoned",
-            "cost": 4.2372e-05
-          },
-          {
-            "image": "46.097255_19.563305.png",
-            "prediction": "abandoned",
-            "answer": "not-abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "46.111869_19.642133.png",
-            "prediction": "not-abandoned",
-            "answer": "not-abandoned",
-            "cost": 4.25106e-05
-          },
-          {
-            "image": "46.6504781_12.1885733.png",
-            "prediction": "abandoned",
-            "answer": "not-abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "47.9464521_7.8555384.png",
-            "prediction": "not-abandoned",
-            "answer": "not-abandoned",
-            "cost": 4.2372e-05
-          },
-          {
-            "image": "48.0798263_11.537421.png",
-            "prediction": "abandoned",
-            "answer": "not-abandoned",
-            "cost": 4.2372e-05
-          },
-          {
-            "image": "48.163871_11.6474427.png",
-            "prediction": "abandoned",
-            "answer": "not-abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "49.353415_7.939273.png",
-            "prediction": "abandoned",
-            "answer": "not-abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "50.7589744_19.1113412.png",
-            "prediction": "abandoned",
-            "answer": "not-abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "51.0943074_4.8199094.png",
-            "prediction": "abandoned",
-            "answer": "not-abandoned",
-            "cost": 2.37996e-05
-          },
-          {
-            "image": "51.7365448_19.582942.png",
-            "prediction": "abandoned",
-            "answer": "not-abandoned",
-            "cost": 4.2372e-05
-          },
-          {
-            "image": "52.0881334_8.0810071.png",
-            "prediction": "not-abandoned",
-            "answer": "not-abandoned",
-            "cost": 4.25106e-05
-          }
-        ]
-      }
-    },
-    {
       "model": "google/gemini-3.1-flash-lite-preview",
       "predictions": {
         "abandoned": [
@@ -9656,6 +8459,3633 @@
             "prediction": "not-abandoned",
             "answer": "not-abandoned",
             "cost": 0.000191763
+          }
+        ]
+      }
+    },
+    {
+      "model": "qwen/qwen3-vl-32b-instruct",
+      "predictions": {
+        "abandoned": [
+          {
+            "image": "37.12905_-8.019761.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "40.32243_9.37418.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "43.6514_6.8988.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "44.471037_11.267935.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "45.910527_9.000031.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "45.979062_11.342562.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "46.181528_8.901417.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "46.183315_9.039352.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "46.644932_12.233495.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "46.660367_4.344328.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "46.693371_6.8259232.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "46.703361_7.432356.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "47.32996_8.597989.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "47.635829_9.164958.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "48.133868_11.645393.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "48.50796_9.025113.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "48.758121_9.125116.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "48.76529_9.132054.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "48.895467_9.153595.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "49.09679_1.55579.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "49.108814_6.202335.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "49.174644_5.430422.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "49.336989_7.824956.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "49.344703_7.925985.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "49.350008_7.871472.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "49.355203_8.188554.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "49.370104_8.093999.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "49.380827_6.257147.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "49.39091_6.92652.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "49.395474_7.6964.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "49.397211_6.799492.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "49.4027_1.1089.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "49.407376_6.084373.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "49.43373_6.23802.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "49.452807_7.863903.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "49.541677_7.505745.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "49.549364_6.779092.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "49.549989_7.487298.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "49.556683_6.80128.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "49.599964_7.442098.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "49.64225_6.930194.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "49.649472_9.223905.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "49.652542_7.723586.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "49.654329_6.93072.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "49.659817_6.901053.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "49.750854_7.425306.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "49.795618_7.828682.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "49.863611_7.164444.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "49.996806_6.795806.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "50.061814_6.923396.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "50.20461_7.39846.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "50.330981_7.634114.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "50.339378_7.623978.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "50.417415_7.165952.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "50.450942_7.169317.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "50.506423_6.576391.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "50.511576_4.281619.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "50.518492_6.203083.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "50.51_5.294117.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "50.604205_6.435434.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "50.60815_5.2653.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "50.624933_6.291767.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "50.641188_6.464688.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "50.652367_6.336464.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "50.660608_6.287963.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "50.703085_6.184388.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "50.766021_6.412716.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "50.783695_6.427.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "50.80961_6.41323.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "50.857494_8.040303.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "50.883495_6.596341.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "50.884294_6.591657.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "50.891734_6.718492.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "50.955827_11.034845.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "50.956438_11.033812.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "51.1759863618_4.76696199078.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "51.35429_4.963958.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "51.421142_7.480724.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "51.44397_7.240064.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "51.483283_7.470847.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "51.516114_7.432085.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "51.516581_9.984422.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "51.519812_6.635688.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "51.522047_8.112408.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "51.576917_8.124767.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "51.578312_8.1371.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "51.579654_8.143403.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "51.633992_8.004572.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "51.636725_7.043796.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "51.661015_7.134612.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "51.705151_7.117108.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "51.7922_5.8581.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "51.854931_6.66073.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "51.858015_6.662587.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "51.963485_7.671396.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "52.196044_9.795652.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "52.440833_9.776667.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "52.827688_8.002062.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "53.171951_12.654179.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "53.582062_8.118937.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0001534104
+          }
+        ],
+        "not-abandoned": [
+          {
+            "image": "25.5196741_-80.3684854.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "25.5880191_-80.4760991.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "25.6118608_-80.516194.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "25.648298_-80.5295874.png",
+            "prediction": "abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "29.9000765_-95.5880304.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "29.961575_-95.6454394.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "30.186829_-97.839562.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "30.3415114_-90.9928485.png",
+            "prediction": "abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "30.3851921_-86.2426793.png",
+            "prediction": "abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "32.3341442_-96.9448254.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "32.4372011_-97.0813886.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "32.555206_-117.039407.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "32.673854_-117.023454.png",
+            "prediction": "abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "32.675928_-116.99895.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "32.8746113_-80.0832425.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "32.947909_-117.098386.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "32.971197_-116.998179.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "33.046317_-117.019417.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "33.060572_-116.990458.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "33.1245601_-117.1410007.png",
+            "prediction": "abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "33.203718_-116.953302.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "33.245904_-117.104901.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "33.250271_-117.004563.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "33.252739_-117.084465.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "33.259223_-117.136879.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "33.367399_-117.158215.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "33.415173_-117.16286.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "33.8750334_-83.2857633.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "33.8847923_-83.2672219.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "35.8404067_-80.9315635.png",
+            "prediction": "abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "35.8562691_-79.0528311.png",
+            "prediction": "abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "35.8983483_-78.9922912.png",
+            "prediction": "abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "35.963677_-79.1637242.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "35.9967708_-79.0790439.png",
+            "prediction": "abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "36.0051179_-79.1416606.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "36.036808_-79.1477145.png",
+            "prediction": "abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "36.1521696_-78.9707161.png",
+            "prediction": "abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "36.1813864_-79.1274972.png",
+            "prediction": "abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "36.2113671_-78.959938.png",
+            "prediction": "abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "37.196813_-77.382041.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "37.3372279_-121.7696268.png",
+            "prediction": "abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "37.3761936_-121.7947693.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "37.4978317_-97.2796128.png",
+            "prediction": "abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "37.504345_-97.2788355.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "38.4985645_-90.7292812.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "38.5462005_-90.7053819.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "38.582047_-90.6993896.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "38.9710152_-95.5707987.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "38.9769117_-95.7403239.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "39.0100045_-95.5054477.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "39.1018138_-95.6095988.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "39.3990818_-76.6684792.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "39.523812_-104.7530193.png",
+            "prediction": "abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "40.0504391_-105.357638.png",
+            "prediction": "abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "40.8163446_-73.1865186.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "41.0709877_-73.6839156.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "41.2198075_-74.1107966.png",
+            "prediction": "abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "41.6537933_-72.6675044.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "41.9015437_-74.7050354.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "41.910845_-73.8733863.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "42.053788_-78.9665416.png",
+            "prediction": "abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "42.0730842_-76.0163604.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "42.1319067_-76.7304614.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "42.245111_-78.0809491.png",
+            "prediction": "abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "42.2655808_-77.814612.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "42.2756628_-78.10102.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "42.3616122_-75.6166578.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "42.4055407_-78.1704304.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "42.5829724_-77.7923313.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "42.7073352_-74.1105335.png",
+            "prediction": "abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "42.7078023_-77.157332.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "42.7651381_-77.4645365.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "42.7983431_-73.7711479.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "42.9701804_-75.9418318.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "43.1373042_-77.9306463.png",
+            "prediction": "abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "43.2543556_-76.6393113.png",
+            "prediction": "abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "43.4144615_-76.5375148.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "43.7283254_0.2664517.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "43.7973355_7.6688835.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "44.6987288_-69.7535413.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "44.886767_20.678447.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "44.8912992_-89.2556515.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "44.90348_20.6756.png",
+            "prediction": "abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "44.9680789_10.1608107.png",
+            "prediction": "abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "45.0208666_-122.9796365.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "45.0278851_7.7017821.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "45.0350462_-122.7208681.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "45.1259499_-122.8516287.png",
+            "prediction": "abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "46.083067_19.681638.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "46.097255_19.563305.png",
+            "prediction": "abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "46.111869_19.642133.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "46.6504781_12.1885733.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "47.9464521_7.8555384.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "48.0798263_11.537421.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "48.163871_11.6474427.png",
+            "prediction": "abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "49.353415_7.939273.png",
+            "prediction": "abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "50.7589744_19.1113412.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "51.0943074_4.8199094.png",
+            "prediction": "abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "51.7365448_19.582942.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          },
+          {
+            "image": "52.0881334_8.0810071.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0001534104
+          }
+        ]
+      }
+    },
+    {
+      "model": "qwen/qwen3.5-27b",
+      "predictions": {
+        "abandoned": [
+          {
+            "image": "37.12905_-8.019761.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "40.32243_9.37418.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "43.6514_6.8988.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "44.471037_11.267935.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "45.910527_9.000031.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "45.979062_11.342562.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "46.181528_8.901417.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "46.183315_9.039352.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "46.644932_12.233495.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "46.660367_4.344328.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "46.693371_6.8259232.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "46.703361_7.432356.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "47.32996_8.597989.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "47.635829_9.164958.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "48.133868_11.645393.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "48.50796_9.025113.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "48.758121_9.125116.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "48.76529_9.132054.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "48.895467_9.153595.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "49.09679_1.55579.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "49.108814_6.202335.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "49.174644_5.430422.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "49.336989_7.824956.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "49.344703_7.925985.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "49.350008_7.871472.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "49.355203_8.188554.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "49.370104_8.093999.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "49.380827_6.257147.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "49.39091_6.92652.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "49.395474_7.6964.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "49.397211_6.799492.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "49.4027_1.1089.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "49.407376_6.084373.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "49.43373_6.23802.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "49.452807_7.863903.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "49.541677_7.505745.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "49.549364_6.779092.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "49.549989_7.487298.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "49.556683_6.80128.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "49.599964_7.442098.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "49.64225_6.930194.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "49.649472_9.223905.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "49.652542_7.723586.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "49.654329_6.93072.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "49.659817_6.901053.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "49.750854_7.425306.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "49.795618_7.828682.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "49.863611_7.164444.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "49.996806_6.795806.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "50.061814_6.923396.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "50.20461_7.39846.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "50.330981_7.634114.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "50.339378_7.623978.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "50.417415_7.165952.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "50.450942_7.169317.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "50.506423_6.576391.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "50.511576_4.281619.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "50.518492_6.203083.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "50.51_5.294117.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "50.604205_6.435434.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "50.60815_5.2653.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "50.624933_6.291767.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "50.641188_6.464688.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "50.652367_6.336464.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "50.660608_6.287963.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "50.703085_6.184388.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "50.766021_6.412716.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "50.783695_6.427.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "50.80961_6.41323.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "50.857494_8.040303.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "50.883495_6.596341.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "50.884294_6.591657.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "50.891734_6.718492.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "50.955827_11.034845.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "50.956438_11.033812.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "51.1759863618_4.76696199078.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "51.35429_4.963958.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "51.421142_7.480724.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "51.44397_7.240064.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "51.483283_7.470847.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "51.516114_7.432085.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "51.516581_9.984422.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "51.519812_6.635688.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "51.522047_8.112408.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "51.576917_8.124767.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "51.578312_8.1371.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "51.579654_8.143403.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "51.633992_8.004572.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "51.636725_7.043796.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "51.661015_7.134612.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "51.705151_7.117108.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "51.7922_5.8581.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "51.854931_6.66073.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "51.858015_6.662587.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "51.963485_7.671396.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "52.196044_9.795652.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "52.440833_9.776667.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "52.827688_8.002062.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "53.171951_12.654179.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "53.582062_8.118937.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.0002899611
+          }
+        ],
+        "not-abandoned": [
+          {
+            "image": "25.5196741_-80.3684854.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "25.5880191_-80.4760991.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "25.6118608_-80.516194.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "25.648298_-80.5295874.png",
+            "prediction": "abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "29.9000765_-95.5880304.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "29.961575_-95.6454394.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "30.186829_-97.839562.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "30.3415114_-90.9928485.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "30.3851921_-86.2426793.png",
+            "prediction": "abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "32.3341442_-96.9448254.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "32.4372011_-97.0813886.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "32.555206_-117.039407.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "32.673854_-117.023454.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "32.675928_-116.99895.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "32.8746113_-80.0832425.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "32.947909_-117.098386.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "32.971197_-116.998179.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "33.046317_-117.019417.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "33.060572_-116.990458.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "33.1245601_-117.1410007.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "33.203718_-116.953302.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "33.245904_-117.104901.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "33.250271_-117.004563.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "33.252739_-117.084465.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "33.259223_-117.136879.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "33.367399_-117.158215.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "33.415173_-117.16286.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "33.8750334_-83.2857633.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "33.8847923_-83.2672219.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "35.8404067_-80.9315635.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "35.8562691_-79.0528311.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "35.8983483_-78.9922912.png",
+            "prediction": "abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "35.963677_-79.1637242.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "35.9967708_-79.0790439.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "36.0051179_-79.1416606.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "36.036808_-79.1477145.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "36.1521696_-78.9707161.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "36.1813864_-79.1274972.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "36.2113671_-78.959938.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "37.196813_-77.382041.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "37.3372279_-121.7696268.png",
+            "prediction": "abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "37.3761936_-121.7947693.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "37.4978317_-97.2796128.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "37.504345_-97.2788355.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "38.4985645_-90.7292812.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "38.5462005_-90.7053819.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "38.582047_-90.6993896.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "38.9710152_-95.5707987.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "38.9769117_-95.7403239.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "39.0100045_-95.5054477.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "39.1018138_-95.6095988.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "39.3990818_-76.6684792.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "39.523812_-104.7530193.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "40.0504391_-105.357638.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "40.8163446_-73.1865186.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "41.0709877_-73.6839156.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "41.2198075_-74.1107966.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "41.6537933_-72.6675044.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "41.9015437_-74.7050354.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "41.910845_-73.8733863.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "42.053788_-78.9665416.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "42.0730842_-76.0163604.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "42.1319067_-76.7304614.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "42.245111_-78.0809491.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "42.2655808_-77.814612.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "42.2756628_-78.10102.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "42.3616122_-75.6166578.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "42.4055407_-78.1704304.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "42.5829724_-77.7923313.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "42.7073352_-74.1105335.png",
+            "prediction": "abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "42.7078023_-77.157332.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "42.7651381_-77.4645365.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "42.7983431_-73.7711479.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "42.9701804_-75.9418318.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "43.1373042_-77.9306463.png",
+            "prediction": "abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "43.2543556_-76.6393113.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "43.4144615_-76.5375148.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "43.7283254_0.2664517.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "43.7973355_7.6688835.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "44.6987288_-69.7535413.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "44.886767_20.678447.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "44.8912992_-89.2556515.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "44.90348_20.6756.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "44.9680789_10.1608107.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "45.0208666_-122.9796365.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "45.0278851_7.7017821.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0002899611
+          },
+          {
+            "image": "45.0350462_-122.7208681.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0004014846
+          },
+          {
+            "image": "45.1259499_-122.8516287.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0004014846
+          },
+          {
+            "image": "46.083067_19.681638.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0004014846
+          },
+          {
+            "image": "46.097255_19.563305.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0004014846
+          },
+          {
+            "image": "46.111869_19.642133.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0004014846
+          },
+          {
+            "image": "46.6504781_12.1885733.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0004014846
+          },
+          {
+            "image": "47.9464521_7.8555384.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0004014846
+          },
+          {
+            "image": "48.0798263_11.537421.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0004014846
+          },
+          {
+            "image": "48.163871_11.6474427.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0004014846
+          },
+          {
+            "image": "49.353415_7.939273.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0004014846
+          },
+          {
+            "image": "50.7589744_19.1113412.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0004014846
+          },
+          {
+            "image": "51.0943074_4.8199094.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0004014846
+          },
+          {
+            "image": "51.7365448_19.582942.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0004014846
+          },
+          {
+            "image": "52.0881334_8.0810071.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.0004014846
+          }
+        ]
+      }
+    },
+    {
+      "model": "qwen/qwen3.5-35b-a3b",
+      "predictions": {
+        "abandoned": [
+          {
+            "image": "37.12905_-8.019761.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "40.32243_9.37418.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "43.6514_6.8988.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "44.471037_11.267935.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "45.910527_9.000031.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "45.979062_11.342562.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "46.181528_8.901417.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "46.183315_9.039352.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "46.644932_12.233495.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "46.660367_4.344328.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "46.693371_6.8259232.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "46.703361_7.432356.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "47.32996_8.597989.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "47.635829_9.164958.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "48.133868_11.645393.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "48.50796_9.025113.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "48.758121_9.125116.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "48.76529_9.132054.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "48.895467_9.153595.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "49.09679_1.55579.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "49.108814_6.202335.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "49.174644_5.430422.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "49.336989_7.824956.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "49.344703_7.925985.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "49.350008_7.871472.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "49.355203_8.188554.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "49.370104_8.093999.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "49.380827_6.257147.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "49.39091_6.92652.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "49.395474_7.6964.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "49.397211_6.799492.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "49.4027_1.1089.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "49.407376_6.084373.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "49.43373_6.23802.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "49.452807_7.863903.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "49.541677_7.505745.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "49.549364_6.779092.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "49.549989_7.487298.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "49.556683_6.80128.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "49.599964_7.442098.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "49.64225_6.930194.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "49.649472_9.223905.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "49.652542_7.723586.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "49.654329_6.93072.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "49.659817_6.901053.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "49.750854_7.425306.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "49.795618_7.828682.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "49.863611_7.164444.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "49.996806_6.795806.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "50.061814_6.923396.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "50.20461_7.39846.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "50.330981_7.634114.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "50.339378_7.623978.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "50.417415_7.165952.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "50.450942_7.169317.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "50.506423_6.576391.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "50.511576_4.281619.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "50.518492_6.203083.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "50.51_5.294117.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "50.604205_6.435434.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "50.60815_5.2653.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "50.624933_6.291767.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "50.641188_6.464688.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "50.652367_6.336464.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "50.660608_6.287963.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "50.703085_6.184388.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "50.766021_6.412716.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "50.783695_6.427.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "50.80961_6.41323.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "50.857494_8.040303.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "50.883495_6.596341.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "50.884294_6.591657.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "50.891734_6.718492.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "50.955827_11.034845.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "50.956438_11.033812.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "51.1759863618_4.76696199078.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "51.35429_4.963958.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "51.421142_7.480724.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "51.44397_7.240064.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "51.483283_7.470847.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "51.516114_7.432085.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "51.516581_9.984422.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "51.519812_6.635688.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "51.522047_8.112408.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "51.576917_8.124767.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "51.578312_8.1371.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "51.579654_8.143403.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "51.633992_8.004572.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "51.636725_7.043796.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "51.661015_7.134612.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "51.705151_7.117108.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "51.7922_5.8581.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "51.854931_6.66073.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "51.858015_6.662587.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "51.963485_7.671396.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "52.196044_9.795652.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "52.440833_9.776667.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "52.827688_8.002062.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "53.171951_12.654179.png",
+            "prediction": "not-abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "53.582062_8.118937.png",
+            "prediction": "abandoned",
+            "answer": "abandoned",
+            "cost": 0.00024163425
+          }
+        ],
+        "not-abandoned": [
+          {
+            "image": "25.5196741_-80.3684854.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "25.5880191_-80.4760991.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "25.6118608_-80.516194.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "25.648298_-80.5295874.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "29.9000765_-95.5880304.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "29.961575_-95.6454394.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "30.186829_-97.839562.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "30.3415114_-90.9928485.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "30.3851921_-86.2426793.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "32.3341442_-96.9448254.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "32.4372011_-97.0813886.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "32.555206_-117.039407.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "32.673854_-117.023454.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "32.675928_-116.99895.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "32.8746113_-80.0832425.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "32.947909_-117.098386.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "32.971197_-116.998179.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "33.046317_-117.019417.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "33.060572_-116.990458.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "33.1245601_-117.1410007.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "33.203718_-116.953302.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "33.245904_-117.104901.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "33.250271_-117.004563.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "33.252739_-117.084465.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "33.259223_-117.136879.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "33.367399_-117.158215.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "33.415173_-117.16286.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "33.8750334_-83.2857633.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "33.8847923_-83.2672219.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "35.8404067_-80.9315635.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "35.8562691_-79.0528311.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "35.8983483_-78.9922912.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "35.963677_-79.1637242.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "35.9967708_-79.0790439.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "36.0051179_-79.1416606.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "36.036808_-79.1477145.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "36.1521696_-78.9707161.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "36.1813864_-79.1274972.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "36.2113671_-78.959938.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "37.196813_-77.382041.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "37.3372279_-121.7696268.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "37.3761936_-121.7947693.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "37.4978317_-97.2796128.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "37.504345_-97.2788355.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "38.4985645_-90.7292812.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "38.5462005_-90.7053819.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "38.582047_-90.6993896.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "38.9710152_-95.5707987.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "38.9769117_-95.7403239.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "39.0100045_-95.5054477.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "39.1018138_-95.6095988.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "39.3990818_-76.6684792.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "39.523812_-104.7530193.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "40.0504391_-105.357638.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "40.8163446_-73.1865186.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "41.0709877_-73.6839156.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "41.2198075_-74.1107966.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "41.6537933_-72.6675044.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "41.9015437_-74.7050354.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "41.910845_-73.8733863.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "42.053788_-78.9665416.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "42.0730842_-76.0163604.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "42.1319067_-76.7304614.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "42.245111_-78.0809491.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "42.2655808_-77.814612.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "42.2756628_-78.10102.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "42.3616122_-75.6166578.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "42.4055407_-78.1704304.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "42.5829724_-77.7923313.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "42.7073352_-74.1105335.png",
+            "prediction": "abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "42.7078023_-77.157332.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "42.7651381_-77.4645365.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "42.7983431_-73.7711479.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "42.9701804_-75.9418318.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "43.1373042_-77.9306463.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "43.2543556_-76.6393113.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "43.4144615_-76.5375148.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "43.7283254_0.2664517.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "43.7973355_7.6688835.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "44.6987288_-69.7535413.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "44.886767_20.678447.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "44.8912992_-89.2556515.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "44.90348_20.6756.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "44.9680789_10.1608107.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "45.0208666_-122.9796365.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "45.0278851_7.7017821.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "45.0350462_-122.7208681.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "45.1259499_-122.8516287.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "46.083067_19.681638.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "46.097255_19.563305.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "46.111869_19.642133.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "46.6504781_12.1885733.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "47.9464521_7.8555384.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "48.0798263_11.537421.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "48.163871_11.6474427.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "49.353415_7.939273.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "50.7589744_19.1113412.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "51.0943074_4.8199094.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "51.7365448_19.582942.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
+          },
+          {
+            "image": "52.0881334_8.0810071.png",
+            "prediction": "not-abandoned",
+            "answer": "not-abandoned",
+            "cost": 0.00024163425
           }
         ]
       }

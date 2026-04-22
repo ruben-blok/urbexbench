@@ -8,22 +8,15 @@ A benchmark for evaluating vision language models on urban exploration (urbex) i
 ## Leaderboard
 
 | Rank | Model | Parameters | Accuracy |
-|----- |-------------------------------|------|-----|
-| 1🥇  | Gemini 3.1 Flash Lite Preview | -    | 92% |
-| 2🥈  | Qwen3 VL                      | 30   | 89% |
-| 3🥉  | Qwen3.5 Plus 02-15            | 397  | 87% |
-| 4    | Qwen3.5 Flash 02-23           | 35   | 86% |
-| 5    | Kimi K2.5                     | 1000 | 85% |
-| 5    | Qwen3 VL                      | 235  | 85% |
-| 5    | Gemma 3                       | 12   | 85% |
-| 6    | MiMo V2 Omni                  | -    | 84% |
-| 6    | Qwen3.5                       | 9    | 84% |
-| 7    | Grok 4.1 Fast                 | -    | 82% |
-| 8    | Gemma 3                       | 27   | 75% |
-| 9    | Ministral 2512                | 14   | 65% |
-| 10   | Ministral 2512                | 8    | 63% |
-| 11   | Gemma 3                       | 4    | 56% |
-| 12   | Ministral 2512                | 3    | 55% |
+|----- |-------------------------------|------|-------|
+| 1🥇  | Gemini 3.1 Flash Lite Preview | -    | 71%   |
+| 2🥈  | Qwen3 VL                      | 32   | 69,5% |
+| 3🥉  | Qwen3 VL                      | 30   | 65,5% |
+| 4    | Gemma 3                       | 12   | 64,5% |
+| 5    | Gemma 3                       | 4    | 64%   |
+| 5    | Qwen3 VL                      | 8    | 64%   |
+| 6    | Gemma 3                       | 27   | 63,5% |
+| 7    | Gemma 4                       | 26   | 62,5% |
 
 ![](accuracy_vs_cost.svg)
 
