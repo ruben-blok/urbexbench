@@ -3,7 +3,7 @@
         {
             "model": "model id",
             "predictions": {
-                "abandoned": [{"image": "image_name", "prediction": "...", "answer": "answer"}]}
+                "abandoned": [{"image": "image_name", "prediction": "...", "answer": "answer", "cost": 0.0}]}
         }
     ]
 }

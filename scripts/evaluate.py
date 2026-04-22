@@ -1,5 +1,6 @@
 import json
 import os
+import sys
 import base64
 from pathlib import Path
 from dotenv import load_dotenv
@@ -17,6 +18,11 @@ api_key = os.getenv("OPENROUTER_API_KEY")
 
 client = OpenAI(api_key=api_key, base_url="https://openrouter.ai/api/v1") if api_key else None
 
+
+class MissingUsageCostError(Exception):
+    """Raised when an OpenRouter response does not include usage.cost."""
+    pass
+
 def load_models():
     """Load model names from models.json"""
     if not models_file.exists():
@@ -27,6 +33,21 @@ def load_models():
 def encode_image_to_base64(image_path):
     """Encode image to base64 for API transmission"""
     return base64.standard_b64encode(Path(image_path).read_bytes()).decode('utf-8')
+
+
+def extract_message_cost(response):
+    """Return only usage.cost (the amount OpenRouter billed).
+
+    This deliberately does NOT fall back to total_cost or model_extra.
+    It accepts both dict-style and SDK object-style responses.
+    """
+    usage = response.get("usage") if isinstance(response, dict) else getattr(response, "usage", None)
+    if usage is None:
+        return None
+
+    if isinstance(usage, dict):
+        return usage.get("cost")
+    return getattr(usage, "cost", None)
 
 
 def classify_image(model_id, image_path):
@@ -53,24 +74,35 @@ def classify_image(model_id, image_path):
             }
         )
 
+        cost = extract_message_cost(response)
+        # Enforce strict presence of usage.cost: stop immediately if missing.
+        if cost is None:
+            raise MissingUsageCostError(
+                f"Missing usage.cost in OpenRouter response for model '{model_id}', image '{Path(image_path).name}'"
+            )
         content = response.choices[0].message.content
 
         if content is None:
-            return None
+            return None, cost
 
         content = content.strip()
         if '0' in content:
-            return 'not-abandoned'
+            return 'not-abandoned', cost
         elif '1' in content:
-            return 'abandoned'
-        return None
+            return 'abandoned', cost
+        return None, cost
 
     except Exception as e:
+        # If it's a missing-cost error, re-raise so the caller can stop execution.
+        if isinstance(e, MissingUsageCostError):
+            raise
+
         if '429' in str(e).lower() or 'rate limit' in str(e).lower():
-            pass
+            # allow rate limits to be handled upstream by returning None
+            return None, None
         else:
             print(f"Error classifying {Path(image_path).name} with {model_id}: {e}")
-        return None
+            return None, None
 
 def load_test_images():
     """Load all test images and their ground truth labels"""
@@ -103,15 +135,16 @@ def evaluate_model(model_id, test_images):
     print(f"\nEvaluating {model_id} on {len(all_images)} images...")
     
     for true_label, image_path in tqdm(all_images, desc=model_id):
-        prediction = classify_image(model_id, image_path)
+        prediction, cost = classify_image(model_id, image_path)
         
-        if prediction is not None:
+        if prediction is not None or cost is not None:
             results['predictions'][true_label].append({
                 'image': Path(image_path).name,
                 'prediction': prediction,
-                'answer': true_label
+                'answer': true_label,
+                'cost': cost
             })
-    
+
     return results
 
 def print_results(all_results):
@@ -124,8 +157,14 @@ def print_results(all_results):
         model = result['model']
         predictions = result['predictions']
         
-        total = sum(len(preds) for preds in predictions.values())
-        correct = sum(1 for preds in predictions.values() for p in preds if p['prediction'] == p['answer'])
+        valid_predictions = [
+            p
+            for preds in predictions.values()
+            for p in preds
+            if p.get('prediction') is not None
+        ]
+        total = len(valid_predictions)
+        correct = sum(1 for p in valid_predictions if p['prediction'] == p['answer'])
         accuracy = (correct / total * 100) if total > 0 else 0
         
         print(f"\n{model}:")
@@ -156,14 +195,13 @@ def save_results(all_results):
         except Exception:
             pass
     
-    existing_models = {r['model'] for r in existing_results}
+    results_by_model = {r['model']: r for r in existing_results}
     for result in all_results:
-        if result['model'] not in existing_models:
-            existing_results.append(result)
+        results_by_model[result['model']] = result
     
     try:
         with open(output_file, 'w') as f:
-            json.dump({'model_results': existing_results}, f, indent=2)
+            json.dump({'model_results': list(results_by_model.values())}, f, indent=2)
         print(f"\nDetailed results saved to {output_file}")
     except Exception as e:
         print(f"Error saving results: {e}")
@@ -223,6 +261,11 @@ def main():
             save_results([result])
             print_results([result])
         except Exception as e:
+            # If we encounter a missing usage.cost, stop immediately with non-zero exit.
+            if isinstance(e, MissingUsageCostError):
+                print(f"Fatal: {e}")
+                sys.exit(2)
+
             print(f"Error evaluating model {model_id}: {e}")
             continue
 
