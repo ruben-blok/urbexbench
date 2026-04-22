@@ -1,4 +1,5 @@
 import json
+import math
 from pathlib import Path
 from xml.sax.saxutils import escape
 
@@ -35,6 +36,35 @@ def average_message_cost(predictions):
     return sum(costs) / len(costs)
 
 
+def nice_number(value, round_up=False):
+    if value <= 0:
+        return 1
+
+    exponent = math.floor(math.log10(value))
+    fraction = value / (10 ** exponent)
+
+    if round_up:
+        if fraction <= 1:
+            nice_fraction = 1
+        elif fraction <= 2:
+            nice_fraction = 2
+        elif fraction <= 5:
+            nice_fraction = 5
+        else:
+            nice_fraction = 10
+    else:
+        if fraction < 1.5:
+            nice_fraction = 1
+        elif fraction < 3:
+            nice_fraction = 2
+        elif fraction < 7:
+            nice_fraction = 5
+        else:
+            nice_fraction = 10
+
+    return nice_fraction * (10 ** exponent)
+
+
 def build_scatter_svg(stats, output_file: Path):
     if not stats:
         print("No models with a known average cost found; skipping plot generation.")
@@ -62,6 +92,9 @@ def build_scatter_svg(stats, output_file: Path):
     x_padding = max(x_range * 0.1, 1e-6)
     x_min = max(0, x_min - x_padding)
     x_max = x_max + x_padding
+    x_tick_step = nice_number((x_max - x_min) / 8, round_up=True)
+    x_min = math.floor(x_min / x_tick_step) * x_tick_step
+    x_max = math.ceil(x_max / x_tick_step) * x_tick_step
 
     y_min = 0
     y_max = 100
@@ -76,7 +109,12 @@ def build_scatter_svg(stats, output_file: Path):
         return model.split("/")[-1]
 
     def x_tick_labels():
-        return [x_min + i * (x_max - x_min) / 4 for i in range(5)]
+        tick = x_min
+        labels = []
+        while tick <= x_max + (x_tick_step / 1000):
+            labels.append(round(tick, 10))
+            tick = round(tick + x_tick_step, 10)
+        return labels
 
     svg = [
         '<?xml version="1.0" encoding="UTF-8"?>',
