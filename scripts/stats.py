@@ -5,7 +5,6 @@ from xml.sax.saxutils import escape
 
 ROOT = Path(__file__).resolve().parent.parent
 RESULTS_FILE = ROOT / "results.json"
-PRICE_FILE = ROOT / "price.json"
 OUTPUT_FILE = ROOT / "accuracy_vs_cost.svg"
 
 
@@ -20,9 +19,23 @@ def format_cost(value):
     return f"{value:.2e}"
 
 
+def average_message_cost(predictions):
+    costs = []
+    for preds in predictions.values():
+        for prediction in preds:
+            cost = prediction.get("cost")
+            if isinstance(cost, (int, float)) and not isinstance(cost, bool):
+                costs.append(float(cost))
+
+    if not costs:
+        return None
+
+    return sum(costs) / len(costs)
+
+
 def build_scatter_svg(stats, output_file: Path):
     if not stats:
-        print("No models with a known cost found; skipping plot generation.")
+        print("No models with a known average cost found; skipping plot generation.")
         return
 
     width = 1200
@@ -34,7 +47,7 @@ def build_scatter_svg(stats, output_file: Path):
     plot_width = width - left - right
     plot_height = height - top - bottom
 
-    costs = [s["cost"] for s in stats]
+    costs = [s["avg_cost"] for s in stats]
     accuracies = [s["accuracy"] for s in stats]
 
     x_min = min(costs)
@@ -70,7 +83,7 @@ def build_scatter_svg(stats, output_file: Path):
         '<rect width="100%" height="100%" fill="#ffffff"/>',
         f'<text x="{width / 2:.2f}" y="42" text-anchor="middle" '
         'font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#111827">'
-        'Model Accuracy vs Cost</text>',
+        'Model Accuracy vs Average Cost / Message</text>',
     ]
 
     # Grid and axes.
@@ -103,7 +116,7 @@ def build_scatter_svg(stats, output_file: Path):
             f'<line x1="{left}" y1="{top}" x2="{left}" y2="{top + plot_height}" stroke="#111827" stroke-width="1.5"/>',
             f'<line x1="{left}" y1="{top + plot_height}" x2="{left + plot_width}" y2="{top + plot_height}" stroke="#111827" stroke-width="1.5"/>',
             f'<text x="{width / 2:.2f}" y="{height - 28}" text-anchor="middle" '
-            'font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#111827">Cost</text>',
+            'font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#111827">Average Cost / Message</text>',
             (
                 f'<text x="28" y="{top + plot_height / 2:.2f}" text-anchor="middle" '
                 'font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#111827" '
@@ -114,11 +127,11 @@ def build_scatter_svg(stats, output_file: Path):
     )
 
     for stat in stats:
-        x = x_to_px(stat["cost"])
+        x = x_to_px(stat["avg_cost"])
         y = y_to_px(stat["accuracy"])
         label = escape(short_label(stat["model"]))
         tooltip = escape(
-            f"{stat['model']} | accuracy {stat['accuracy']:.2f}% | cost {format_cost(stat['cost'])}"
+            f"{stat['model']} | accuracy {stat['accuracy']:.2f}% | avg cost {format_cost(stat['avg_cost'])}"
         )
         if x > left + plot_width - 140:
             label_x = x - 12
@@ -146,13 +159,8 @@ def calculate_stats():
         print(f"Error: results.json not found at {RESULTS_FILE}")
         return
 
-    if not PRICE_FILE.exists():
-        print(f"Error: price.json not found at {PRICE_FILE}")
-        return
-
     try:
         data = load_json(RESULTS_FILE)
-        prices = load_json(PRICE_FILE)
     except Exception as e:
         print(f"Error loading JSON data: {e}")
         return
@@ -166,7 +174,7 @@ def calculate_stats():
     print("\n" + "=" * 92)
     print("MODEL ACCURACY STATISTICS")
     print("=" * 92)
-    print(f"{'Model':<45} {'Correct':<10} {'Total':<10} {'Accuracy':<10} {'Cost':<12}")
+    print(f"{'Model':<45} {'Correct':<10} {'Total':<10} {'Accuracy':<10} {'Avg Cost / Msg':<16}")
     print("-" * 92)
 
     stats = []
@@ -181,22 +189,22 @@ def calculate_stats():
         )
         accuracy = (correct / total * 100) if total > 0 else 0
 
-        cost = prices.get(model)
-        has_cost = isinstance(cost, (int, float)) and cost > 0
+        avg_cost = average_message_cost(predictions)
+        has_avg_cost = avg_cost is not None
 
         stats.append({
             "model": model,
             "correct": correct,
             "total": total,
             "accuracy": accuracy,
-            "cost": cost,
-            "has_cost": has_cost,
+            "avg_cost": avg_cost,
+            "has_avg_cost": has_avg_cost,
         })
 
     stats.sort(key=lambda x: x["accuracy"], reverse=True)
 
     for s in stats:
-        cost_text = format_cost(s["cost"]) if s["has_cost"] else "N/A"
+        cost_text = format_cost(s["avg_cost"]) if s["has_avg_cost"] else "N/A"
         print(
             f"{s['model']:<45} {s['correct']:<10} {s['total']:<10} "
             f"{s['accuracy']:.2f}% {cost_text:<12}"
@@ -205,11 +213,11 @@ def calculate_stats():
     print("-" * 92)
     print(f"Total models evaluated: {len(stats)}")
 
-    plotted_stats = [s for s in stats if s["has_cost"]]
+    plotted_stats = [s for s in stats if s["has_avg_cost"]]
     skipped = len(stats) - len(plotted_stats)
 
     if skipped:
-        print(f"Models without a known cost: {skipped}")
+        print(f"Models without saved cost data: {skipped}")
 
     build_scatter_svg(plotted_stats, OUTPUT_FILE)
 
