@@ -1,3 +1,4 @@
+import argparse
 import json
 import os
 import base64
@@ -25,6 +26,17 @@ def load_models():
         raise FileNotFoundError(f"models.json not found at {models_file}")
     with open(models_file, 'r') as f:
         return json.load(f)
+
+
+def parse_args():
+    parser = argparse.ArgumentParser(description="Evaluate models on test images.")
+    parser.add_argument(
+        "--force",
+        nargs="*",
+        metavar="MODEL",
+        help="Re-evaluate all models, or only the specified model IDs.",
+    )
+    return parser.parse_args()
 
 def encode_image_to_base64(image_path):
     """Encode image to base64 for API transmission"""
@@ -228,6 +240,8 @@ def save_results(all_results):
 
 def main():
     """Main evaluation pipeline"""
+    args = parse_args()
+
     # Validate API key
     if not api_key:
         print("Error: OPENAI_API_KEY not found in environment.")
@@ -262,17 +276,36 @@ def main():
     if not models:
         print("Error: No models found in models.json")
         return
-    
-    existing_models = load_existing_results()
-    if existing_models:
-        print(f"\nFound existing results for: {', '.join(existing_models)}")
-    
-    models_to_evaluate = [m for m in models if m not in existing_models]
+
+    force_models = args.force
+    if force_models is not None:
+        if len(force_models) == 0:
+            models_to_evaluate = models
+            print("\nForce mode enabled: re-evaluating all models.")
+        else:
+            unknown_models = [m for m in force_models if m not in models]
+            if unknown_models:
+                print(f"Error: unknown model(s) in --force: {', '.join(unknown_models)}")
+                return
+
+            forced_set = set(force_models)
+            models_to_evaluate = [m for m in models if m in forced_set]
+            print(f"\nForce mode enabled: re-evaluating {', '.join(models_to_evaluate)}.")
+    else:
+        existing_models = load_existing_results()
+        if existing_models:
+            print(f"\nFound existing results for: {', '.join(existing_models)}")
+
+        models_to_evaluate = [m for m in models if m not in existing_models]
+        if not models_to_evaluate:
+            print("\nAll models have already been evaluated. Use --force to re-evaluate.")
+            return
+
+        print(f"\nEvaluating {len(models_to_evaluate)} new model(s)...")
+
     if not models_to_evaluate:
-        print("\nAll models have already been evaluated. Use --force to re-evaluate.")
+        print("\nNo matching models found to evaluate.")
         return
-    
-    print(f"\nEvaluating {len(models_to_evaluate)} new model(s)...")
     
     for i, model_id in enumerate(models_to_evaluate, 1):
         try:
