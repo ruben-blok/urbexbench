@@ -71,6 +71,8 @@ def classify_image(model_id, image_path):
                         ],
                     }
                 ],
+                temperature=0,
+                seed=42,
                 extra_body={
                     "reasoning": {
                         "effort": "none"
