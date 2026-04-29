@@ -11,5 +11,6 @@
   "qwen/qwen3.5-9b",
   "qwen/qwen3.5-27b",
   "qwen/qwen3.5-35b-a3b",
-  "nvidia/nemotron-nano-12b-v2-vl:free"
+  "nvidia/nemotron-nano-12b-v2-vl:free",
+  "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free"
 ]
