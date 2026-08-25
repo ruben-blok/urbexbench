@@ -9,21 +9,28 @@ Een benchmark (toets) om te testen hoe goed verschillende AI‑modellen kunnen c
 
 | Rang | Model | Parameters | Nauwkeurigheid | Totaal |
 |----- |-------------------------------|------|----|-----|
-| 1🥇  | Gemini 3.1 Flash Lite Preview | -    | 92 | 100 |
-| 2🥈  | Qwen3 VL                      | 30   | 89 | 100 |
-| 3🥉  | Qwen3.5 Plus 02-15            | 397  | 87 | 100 |
-| 4    | Qwen3.5 Flash 02-23           | 35   | 86 | 100 |
-| 5    | Kimi K2.5                     | 1000 | 85 | 100 |
-| 5    | Qwen3 VL                      | 235  | 85 | 100 |
-| 5    | Gemma 3                       | 12   | 85 | 100 |
-| 6    | MiMo V2 Omni                  | -    | 84 | 100 |
-| 6    | Qwen3.5                       | 9    | 84 | 100 |
-| 7    | Grok 4.1 Fast                 | -    | 82 | 100 |
-| 8    | Gemma 3                       | 27   | 75 | 100 |
-| 9    | Ministral 2512                | 14   | 65 | 100 |
-| 10   | Ministral 2512                | 8    | 63 | 100 |
-| 11   | Gemma 3                       | 4    | 56 | 100 |
-| 12   | Ministral 2512                | 3    | 55 | 100 |
+| 1🥇  | Gemini 3.7 Flash              | -    | 149 | 200 |
+| 2🥈  | Gemini 3.1 Flash Lite Preview | -    | 142 | 200 |
+| 3🥉  | Gemini 3.1 Flash Lite         | -    | 140 | 200 |
+| 4    | Qwen3 VL                      | 30   | 138 | 200 |
+| 5    | DeepSeek V4 Flash Vision      | -    | 137 | 200 |
+| 6    | Gemini 2.5 Flash Lite         | -    | 136 | 200 |
+| 6    | Qwen3.5 35B-A3B               | 35   | 136 | 200 |
+| 8    | Ox Alpha                      | -    | 133 | 200 |
+| 8    | Qwen3 VL                      | 32   | 133 | 200 |
+| 8    | Qwen3.5                       | 27   | 133 | 200 |
+| 11   | Nemotron 3 Nano Omni          | 30   | 132 | 200 |
+| 12   | Nemotron Nano 12B V2 VL       | 12   | 131 | 200 |
+| 12   | MiMo V2.5                     | -    | 131 | 200 |
+| 14   | Gemma 3                       | 27   | 129 | 200 |
+| 14   | Gemma 3                       | 12   | 129 | 200 |
+| 14   | Qwen3.5                       | 9    | 129 | 200 |
+| 17   | Qwen3 VL                      | 8    | 128 | 200 |
+| 18   | Gemma 3                       | 4    | 125 | 200 |
+| 18   | Gemma 4                       | 26   | 125 | 200 |
+| 20   | Gemma 4                       | 31   | 119 | 200 |
+
+\* De evaluaties draaien zonder reasoning waar dat mogelijk is. Gemini 3.7 Flash en Ox Alpha verplichten reasoning op hun endpoint en zijn daarom getest op de laagste ondersteunde stand (`low` / `minimal`).
 
 ## Werking
 

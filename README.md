@@ -9,14 +9,28 @@ A benchmark for evaluating vision language models on urban exploration (urbex) i
 
 | Rank | Model | Parameters | Accuracy |
 |----- |-------------------------------|------|-------|
-| 1🥇  | Gemini 3.1 Flash Lite Preview | -    | 71%   |
-| 2🥈  | Qwen3 VL                      | 32   | 69,5% |
-| 3🥉  | Qwen3 VL                      | 30   | 65,5% |
-| 4    | Gemma 3                       | 12   | 64,5% |
-| 5    | Gemma 3                       | 4    | 64%   |
-| 5    | Qwen3 VL                      | 8    | 64%   |
-| 6    | Gemma 3                       | 27   | 63,5% |
-| 7    | Gemma 4                       | 26   | 62,5% |
+| 1🥇  | Gemini 3.7 Flash              | -    | 74,5% |
+| 2🥈  | Gemini 3.1 Flash Lite Preview | -    | 71%   |
+| 3🥉  | Gemini 3.1 Flash Lite         | -    | 70%   |
+| 4    | Qwen3 VL                      | 30   | 69%   |
+| 5    | DeepSeek V4 Flash Vision      | -    | 68,5% |
+| 6    | Gemini 2.5 Flash Lite         | -    | 68%   |
+| 6    | Qwen3.5 35B-A3B               | 35   | 68%   |
+| 8    | Ox Alpha                      | -    | 66,5% |
+| 8    | Qwen3 VL                      | 32   | 66,5% |
+| 8    | Qwen3.5                       | 27   | 66,5% |
+| 11   | Nemotron 3 Nano Omni          | 30   | 66%   |
+| 12   | Nemotron Nano 12B V2 VL       | 12   | 65,5% |
+| 12   | MiMo V2.5                     | -    | 65,5% |
+| 14   | Gemma 3                       | 27   | 64,5% |
+| 14   | Gemma 3                       | 12   | 64,5% |
+| 14   | Qwen3.5                       | 9    | 64,5% |
+| 17   | Qwen3 VL                      | 8    | 64%   |
+| 18   | Gemma 3                       | 4    | 62,5% |
+| 18   | Gemma 4                       | 26   | 62,5% |
+| 20   | Gemma 4                       | 31   | 59,5% |
+
+\* Evaluations run with reasoning disabled where possible. Gemini 3.7 Flash and Ox Alpha force reasoning on their endpoints and were evaluated at the lowest supported effort (`low` / `minimal`).
 
 ![](accuracy_vs_cost.svg)
 

@@ -15,5 +15,8 @@
   "qwen/qwen3.5-35b-a3b",
   "nvidia/nemotron-nano-12b-v2-vl:free",
   "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
-  "xiaomi/mimo-v2.5"
+  "xiaomi/mimo-v2.5",
+  "stealth/ox-alpha",
+  "deepseek/deepseek-v4-flash-vision-exp",
+  "google/gemini-3.7-flash"
 ]
