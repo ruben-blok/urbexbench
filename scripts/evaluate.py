@@ -17,7 +17,14 @@ models_file = workspace_root / "models.json"
 test_images_dir = workspace_root / "img"
 api_key = os.getenv("OPENROUTER_API_KEY")
 
-client = OpenAI(api_key=api_key, base_url="https://openrouter.ai/api/v1") if api_key else None
+client = OpenAI(api_key=api_key, base_url="https://openrouter.ai/api/v1", timeout=300) if api_key else None
+
+# Lowest supported reasoning effort per model. Defaults to "none"; entries here
+# are for endpoints where disabling reasoning entirely is not allowed.
+REASONING_EFFORTS = {
+    "stealth/ox-alpha": "minimal",
+    "google/gemini-3.7-flash": "low",
+}
 
 
 def load_models():
@@ -87,7 +94,7 @@ def classify_image(model_id, image_path):
                 seed=42,
                 extra_body={
                     "reasoning": {
-                        "effort": "none"
+                        "effort": REASONING_EFFORTS.get(model_id, "none")
                     }
                 }
             )
