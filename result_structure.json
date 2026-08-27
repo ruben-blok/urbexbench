@@ -2,6 +2,7 @@
     "model_results": [
         {
             "model": "model id",
+            "reasoning_effort": "none|minimal|low|medium|high",
             "predictions": {
                 "abandoned": [{"image": "image_name", "prediction": "...", "answer": "answer", "cost": 0.0}]}
         }

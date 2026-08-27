@@ -8,6 +8,8 @@ ROOT = Path(__file__).resolve().parent.parent
 RESULTS_FILE = ROOT / "results.json"
 OUTPUT_FILE = ROOT / "accuracy_vs_cost.svg"
 X_AXIS_SCALE = 1000
+COLOR_REASONING_OFF = "#2563eb"
+COLOR_REASONING_ON = "#16a34a"
 
 
 def load_json(path: Path):
@@ -154,6 +156,17 @@ def build_scatter_svg(stats, output_file: Path):
         ]
     )
 
+    # Legend.
+    legend_x = left + plot_width - 236
+    svg.extend(
+        [
+            f'<circle cx="{legend_x}" cy="{top + 18}" r="6" fill="{COLOR_REASONING_OFF}"/>',
+            f'<text x="{legend_x + 12}" y="{top + 22}" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#111827">Reasoning off</text>',
+            f'<circle cx="{legend_x}" cy="{top + 40}" r="6" fill="{COLOR_REASONING_ON}"/>',
+            f'<text x="{legend_x + 12}" y="{top + 44}" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#111827">Reasoning on (lowest effort)</text>',
+        ]
+    )
+
     # Axis tick labels.
     tick = y_min
     while tick <= y_max + (y_tick_step / 1000):
@@ -194,9 +207,11 @@ def build_scatter_svg(stats, output_file: Path):
         scaled_cost = stat["avg_cost"] * X_AXIS_SCALE
         x = x_to_px(scaled_cost)
         y = y_to_px(stat["accuracy"])
-        label = escape(short_label(stat["model"]))
+        effort = stat.get("reasoning_effort", "none")
+        point_color = COLOR_REASONING_OFF if effort == "none" else COLOR_REASONING_ON
+        label = escape(f"{short_label(stat['model'])} ({effort})")
         tooltip = escape(
-            f"{stat['model']} | accuracy {stat['accuracy']:.2f}% | avg cost {format_cost(stat['avg_cost'])} | x{X_AXIS_SCALE} {format_cost(scaled_cost)}"
+            f"{stat['model']} (effort={effort}) | accuracy {stat['accuracy']:.2f}% | avg cost {format_cost(stat['avg_cost'])} | x{X_AXIS_SCALE} {format_cost(scaled_cost)}"
         )
         if x > left + plot_width - 140:
             label_x = x - 12
@@ -207,7 +222,7 @@ def build_scatter_svg(stats, output_file: Path):
         label_y = y - 10 if y > top + 24 else y + 16
         svg.append(
             f'<g><title>{tooltip}</title><circle cx="{x:.2f}" cy="{y:.2f}" r="7" '
-            'fill="#2563eb" stroke="#ffffff" stroke-width="2"/>'
+            f'fill="{point_color}" stroke="#ffffff" stroke-width="2"/>'
             f'<text x="{label_x:.2f}" y="{label_y:.2f}" text-anchor="{anchor}" '
             'font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#111827">'
             f'{label}</text></g>'
@@ -236,15 +251,16 @@ def calculate_stats():
         print("No model results found.")
         return
 
-    print("\n" + "=" * 92)
+    print("\n" + "=" * 102)
     print("MODEL ACCURACY STATISTICS")
-    print("=" * 92)
-    print(f"{'Model':<45} {'Correct':<10} {'Total':<10} {'Accuracy':<10} {'Avg Cost / Msg':<16}")
-    print("-" * 92)
+    print("=" * 102)
+    print(f"{'Model':<42} {'Effort':<9} {'Correct':<10} {'Total':<10} {'Accuracy':<10} {'Avg Cost / Msg':<16}")
+    print("-" * 102)
 
     stats = []
     for result in model_results:
         model = result["model"]
+        effort = result.get("reasoning_effort", "none")
         predictions = result["predictions"]
 
         total = sum(len(preds) for preds in predictions.values())
@@ -259,6 +275,7 @@ def calculate_stats():
 
         stats.append({
             "model": model,
+            "reasoning_effort": effort,
             "correct": correct,
             "total": total,
             "accuracy": accuracy,
@@ -271,18 +288,18 @@ def calculate_stats():
     for s in stats:
         cost_text = format_cost(s["avg_cost"]) if s["has_avg_cost"] else "N/A"
         print(
-            f"{s['model']:<45} {s['correct']:<10} {s['total']:<10} "
+            f"{s['model']:<42} {s['reasoning_effort']:<9} {s['correct']:<10} {s['total']:<10} "
             f"{s['accuracy']:.2f}% {cost_text:<12}"
         )
 
-    print("-" * 92)
-    print(f"Total models evaluated: {len(stats)}")
+    print("-" * 102)
+    print(f"Total evaluated runs: {len(stats)}")
 
     plotted_stats = [s for s in stats if s["has_avg_cost"]]
     skipped = len(stats) - len(plotted_stats)
 
     if skipped:
-        print(f"Models without saved cost data: {skipped}")
+        print(f"Runs without saved cost data: {skipped}")
 
     build_scatter_svg(plotted_stats, OUTPUT_FILE)
 

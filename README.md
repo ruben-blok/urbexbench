@@ -7,30 +7,31 @@ A benchmark for evaluating vision language models on urban exploration (urbex) i
 
 ## Leaderboard
 
-| Rank | Model | Parameters | Accuracy |
-|----- |-------------------------------|------|-------|
-| 1🥇  | Gemini 3.7 Flash              | -    | 74,5% |
-| 2🥈  | Gemini 3.1 Flash Lite Preview | -    | 71%   |
-| 3🥉  | Gemini 3.1 Flash Lite         | -    | 70%   |
-| 4    | Qwen3 VL                      | 30   | 69%   |
-| 5    | DeepSeek V4 Flash Vision      | -    | 68,5% |
-| 6    | Gemini 2.5 Flash Lite         | -    | 68%   |
-| 6    | Qwen3.5 35B-A3B               | 35   | 68%   |
-| 8    | Ox Alpha                      | -    | 66,5% |
-| 8    | Qwen3 VL                      | 32   | 66,5% |
-| 8    | Qwen3.5                       | 27   | 66,5% |
-| 11   | Nemotron 3 Nano Omni          | 30   | 66%   |
-| 12   | Nemotron Nano 12B V2 VL       | 12   | 65,5% |
-| 12   | MiMo V2.5                     | -    | 65,5% |
-| 14   | Gemma 3                       | 27   | 64,5% |
-| 14   | Gemma 3                       | 12   | 64,5% |
-| 14   | Qwen3.5                       | 9    | 64,5% |
-| 17   | Qwen3 VL                      | 8    | 64%   |
-| 18   | Gemma 3                       | 4    | 62,5% |
-| 18   | Gemma 4                       | 26   | 62,5% |
-| 20   | Gemma 4                       | 31   | 59,5% |
+Each model is evaluated twice where possible: **reasoning disabled** (`none`) and at its **lowest supported reasoning effort** (`minimal` / `low`). Models that force reasoning are shown only at their minimum effort; models without reasoning support only once.
 
-\* Evaluations run with reasoning disabled where possible. Gemini 3.7 Flash and Ox Alpha force reasoning on their endpoints and were evaluated at the lowest supported effort (`low` / `minimal`).
+| Rank | Model | Effort | Accuracy |
+|----- |-------|--------|----------|
+| 1    | gemini-3.7-flash              | low    | 73.5% |
+| 2    | gemini-3.1-flash-lite        | none   | 71.5% |
+| 3    | deepseek-v4-flash-vision-exp | none   | 71.5% |
+| 4    | gemini-3.1-flash-lite        | minimal| 71.0% |
+| 5    | gemini-3.1-flash-lite-preview| none   | 70.0% |
+| 6    | gemini-3.1-flash-lite-preview| minimal| 70.0% |
+| 7    | gpt-5.6-luna                 | low    | 69.5% |
+| 8    | qwen3-vl-30b-a3b-instruct    | none   | 68.0% |
+| 9    | gpt-5.6-luna                 | none   | 67.5% |
+| 10   | mimo-v2.5                    | minimal| 67.5% |
+| 11   | qwen3-vl-32b-instruct        | none   | 66.5% |
+| 12   | nemotron-3-nano-omni-30b-a3b-reasoning:free | none   | 66.5% |
+| 13   | nemotron-3-nano-omni-30b-a3b-reasoning:free | minimal| 66.5% |
+| 14   | gemma-4-31b-it               | minimal| 66.0% |
+| 15   | gemma-4-26b-a4b-it           | none   | 65.5% |
+| 16   | mimo-v2.5                    | none   | 65.5% |
+| 17   | gemma-4-26b-a4b-it           | minimal| 64.5% |
+| 18   | deepseek-v4-flash-vision-exp | low    | 64.5% |
+| 19   | gemma-4-31b-it               | none   | 62.5% |
+
+\* Reasoning effort per run is the lowest supported by each endpoint, derived from OpenRouter's model catalog (`none` where disabling is allowed, otherwise `minimal`/`low` as advertised). The `stealth/ox-alpha` endpoint was decommissioned and is no longer evaluated. The accuracy-vs-cost chart plots both runs per model: blue = reasoning off, green = reasoning on (lowest effort).
 
 ![](accuracy_vs_cost.svg)
 
