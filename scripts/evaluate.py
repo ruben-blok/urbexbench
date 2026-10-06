@@ -480,7 +480,7 @@ def main():
     runs = build_run_plan(models, catalog)
 
     existing = load_existing_results()
-    done_keys = set() if forced_models else set(existing.keys())
+    done_keys = {key for key in existing.keys() if key[0] not in forced_models}
     pending_runs = []
     for run in runs:
         model_id = run["model"]
